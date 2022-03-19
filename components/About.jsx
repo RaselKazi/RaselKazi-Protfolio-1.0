@@ -35,7 +35,7 @@ export default function About() {
           <div className=" relative  cursor-pointer">
             <Image
               className=" z-10 rounded-xl saturate-50 transition duration-300  hover:saturate-200 "
-              src="/image/racel.jpg"
+              src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645609940/ty5ldchtqzyuah18quxr.jpg"
               alt="Picture of the author"
               layout="responsive"
               width={450}

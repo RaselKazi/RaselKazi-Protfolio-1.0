@@ -45,8 +45,8 @@ export default function Hero() {
                         <div className="rounded-full border-2 border-pink-800  flex items-center justify-center">
                           <Image
                             className="rounded-full"
-                            src="/../public/image/kazi.jpg"
-                            alt="Picture of the author"
+                            src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645610432/ohl6899holv6ujgystls.jpg"
+                            alt="author"
                             layout="fixed"
                             width={270}
                             height={270}

@@ -15,9 +15,9 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const lod = () => setLoading(false);
-    const interval = setInterval(() => {
+    const interval = setTimeout(() => {
       lod();
-    }, 4000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
   if (loading) {

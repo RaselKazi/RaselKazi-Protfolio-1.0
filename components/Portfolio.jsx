@@ -12,7 +12,7 @@ export default function Portfolio() {
   const [menuItem, setMenuItem] = useState(category);
   const [active, setActive] = useState("all");
 
-  //
+  console.log(category);
 
   const filterData = (button) => {
     if (button === "all") {
