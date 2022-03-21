@@ -159,7 +159,7 @@ export default function navbar() {
                         <a
                           href="#Home"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
-                  to-blue-600 dark:text-white text-gray-700"
+                  to-blue-600 dark:text-gray-50 text-gray-50"
                         >
                           Home
                         </a>
@@ -168,7 +168,7 @@ export default function navbar() {
                         <a
                           href="#About"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
-                  to-blue-600 dark:text-white text-gray-700"
+                  to-blue-600 dark:text-gray-50 text-gray-50"
                         >
                           About
                         </a>
@@ -177,7 +177,7 @@ export default function navbar() {
                         <a
                           href="#Portfolio"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
-                  to-blue-600 dark:text-white text-gray-700"
+                  to-blue-600 dark:text-gray-50 text-gray-50"
                         >
                           Portfolio
                         </a>
@@ -196,7 +196,7 @@ export default function navbar() {
                         <a
                           href="#Contact"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
-                  to-blue-600 dark:text-white text-gray-700"
+                  to-blue-600 dark:text-gray-50 text-gray-50"
                         >
                           Contact
                         </a>

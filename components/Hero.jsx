@@ -42,7 +42,7 @@ export default function Hero() {
                   <div className=" bg-pink-900/5 rounded-full p-5 sm:p-8">
                     <div className="bg-pink-900/10 rounded-full p-5 sm:p-8">
                       <div className="bg-pink-800/20 rounded-full p-5 sm:p-8">
-                        <div className="rounded-full border-2 border-pink-800  flex items-center justify-center">
+                        <div className="rounded-full border-2 border-pink-900/70  flex items-center justify-center">
                           <Image
                             className="rounded-full"
                             src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645610432/ohl6899holv6ujgystls.jpg"

@@ -43,7 +43,7 @@ export default function Portfolio() {
             </h2>
           </div>
 
-          <div className=" mb-6 max-w-2xl p-1.5 mx-auto overflow-hidden bg-gray-100 rounded-lg  bg-gray-500/10 backdrop-blur">
+          <div className=" mb-6 max-w-2xl p-1.5 mx-auto overflow-hidden  rounded-lg  bg-gray-500/10 backdrop-blur">
             <div className=" grid gap-3 grid-cols-3 md:grid-cols-5 ">
               <ProjectButton
                 active={active}
