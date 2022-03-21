@@ -8,7 +8,7 @@ import { BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 export default function SocialLink() {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-2 sm:space-x-4">
       <div className="">
         <div className=" relative  overflow-hidden">
           <div className=" top-1/3 left-2  absolute bg-blue-600 h-7 w-7 blur-sm rounded-full "></div>

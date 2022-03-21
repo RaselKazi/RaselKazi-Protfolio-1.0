@@ -1,7 +1,7 @@
 import React from "react";
 export default function Loading() {
   return (
-    <div className=" h-screen w-screen bg-gray-900 flex items-center justify-center">
+    <div className=" h-screen w-screen bg-gray-900 flex items-center justify-center overflow-auto">
       <div>
         <div className=" flex items-center justify-center">
           <div className="">

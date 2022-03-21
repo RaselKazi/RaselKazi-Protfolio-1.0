@@ -37,11 +37,11 @@ export default function Hero() {
               }}
               className="flex items-center justify-center"
             >
-              <div className="relative ">
-                <div className="rounded-full items-center justify-center">
-                  <div className=" bg-pink-900/5 rounded-full p-8">
-                    <div className="bg-pink-900/10 rounded-full p-8">
-                      <div className="bg-pink-800/20 rounded-full p-8">
+              <div className="relative pr-9">
+                <div className="rounded-full items-center justify-center ">
+                  <div className=" bg-pink-900/5 rounded-full p-5 sm:p-8">
+                    <div className="bg-pink-900/10 rounded-full p-5 sm:p-8">
+                      <div className="bg-pink-800/20 rounded-full p-5 sm:p-8">
                         <div className="rounded-full border-2 border-pink-800  flex items-center justify-center">
                           <Image
                             className="rounded-full"
@@ -87,7 +87,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="mb-2 text-6xl text-gray-300 uppercase font-bold tracking-widest"
+                className="my-4 text-5xl sm:text-6xl text-gray-300 uppercase font-bold tracking-widest"
               >
                 Rasel Kazi
               </motion.h5>
@@ -100,7 +100,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="text-4xl mb-2 font-bold capitalize text-gray-400"
+                className="text-3xl sm:text-4xl mb-2 font-bold capitalize text-gray-400"
               >
                 web developer
               </motion.h5>
@@ -113,7 +113,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="mb-6 text-gray-900 text-justify dark:text-gray-500"
+                className="mb-6 pr-6 text-gray-900 text-sm sm:text-base text-justify dark:text-gray-500"
               >
                 I am a Junior Web Developer. I am passionate about coding and
                 problem-solving. I love creating new things and find solutions
