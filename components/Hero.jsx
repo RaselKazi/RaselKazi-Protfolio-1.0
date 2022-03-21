@@ -48,8 +48,8 @@ export default function Hero() {
                             src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645610432/ohl6899holv6ujgystls.jpg"
                             alt="author"
                             layout="fixed"
-                            width={270}
-                            height={270}
+                            width={200}
+                            height={200}
                           />
                         </div>
                       </div>
@@ -87,7 +87,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="my-4 text-5xl sm:text-6xl text-gray-300 uppercase font-bold tracking-widest"
+                className="my-4 text-4xl sm:text-5xl text-gray-300 uppercase font-bold tracking-widest"
               >
                 Rasel Kazi
               </motion.h5>
@@ -100,7 +100,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="text-3xl sm:text-4xl mb-2 font-bold capitalize text-gray-400"
+                className="text-2xl sm:text-3xl mb-2 font-bold capitalize text-gray-400"
               >
                 web developer
               </motion.h5>
@@ -113,14 +113,14 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="mb-6 pr-6 text-gray-900 text-sm sm:text-base text-justify dark:text-gray-500"
+                className="mb-6 pr-8 sm:pr-4 text-gray-900  text-sm sm:text-base text-justify dark:text-gray-500"
               >
                 I am a Junior Web Developer. I am passionate about coding and
                 problem-solving. I love creating new things and find solutions
                 to real-life problems. I always looking to deliver a
                 high-quality product.
               </motion.p>
-              <hr className="mb-5 border-gray-400" />
+              <hr className="mb-5 border-gray-400/40" />
               <motion.div
                 initial="hidden"
                 animate={controls}
