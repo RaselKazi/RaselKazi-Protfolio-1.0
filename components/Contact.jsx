@@ -10,7 +10,7 @@ export default function Contact() {
     <div
       ref={element}
       id="Contact"
-      className=" relative overflow-hidden dark:bg-gray-900 px-4 pb-12 sm:mb-0"
+      className=" relative overflow-hidden bg-gray-900 dark:bg-gray-900 px-4 pb-12 sm:mb-0"
     >
       <div className=" animate-pulse absolute bottom-2 left-10 rounded-full h-52 w-52 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
       <div className="animate-pulse absolute top-10 right-12 rounded-full h-52 w-52 blur-sm bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
@@ -32,7 +32,7 @@ export default function Contact() {
             <div>
               <a
                 href="#Contact"
-                className="flex  text-gray-900 rounded-md my-2 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex  text-gray-100 rounded-md my-2 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
               >
                 <svg
                   className="w-6 h-6 mr-3"
@@ -52,7 +52,7 @@ export default function Contact() {
 
               <a
                 href="#Contact"
-                className="flex text-gray-900  my-4 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex text-gray-100  my-4 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
               >
                 <svg
                   className="w-6 h-6 mr-3"
@@ -68,7 +68,7 @@ export default function Contact() {
 
               <a
                 href="#Contact"
-                className="flex   text-gray-900 rounded-md dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex   text-gray-100 rounded-md dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
               >
                 <svg
                   className="w-6 h-6 mr-3"

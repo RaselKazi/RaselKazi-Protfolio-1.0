@@ -11,7 +11,7 @@ export default function About() {
     <div
       ref={element}
       id="About"
-      className=" relative px-4 py-10 mx-auto bg-gray-100 md:px-24 dark:bg-gray-900 overflow-hidden"
+      className=" relative px-4 py-10 mx-auto bg-gray-900 md:px-24 dark:bg-gray-900 overflow-hidden"
     >
       <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-700/50  rounded-full blur-3xl"></div>
 
@@ -57,10 +57,10 @@ export default function About() {
           }}
           className=" relative flex flex-col justify-center p-8 rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
         >
-          <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl dark:text-gray-400 ">
+          <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl text-gray-400 dark:text-gray-400 ">
             I am a Junior Web Developer.
           </h5>
-          <p className="mb-5 text-gray-800 dark:text-gray-500">
+          <p className="mb-5  text-gray-500 dark:text-gray-500">
             <span className="font-bold">
               I love creating new things and find solutions to real-life
               problems.

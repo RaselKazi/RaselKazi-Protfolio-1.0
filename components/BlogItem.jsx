@@ -6,36 +6,36 @@ export default function BlogItem() {
     return (
       <div
         key={item.Calgary}
-        className="overflow-hidden transition duration-300 transform lg:hover:-translate-y-2 bg-white dark:bg-gray-500/10 rounded-xl shadow-lg hover:shadow-2xl p-2 backdrop-blur-2xl border border-sky-500/30"
+        className="overflow-hidden transition duration-300 transform lg:hover:-translate-y-2 bg-gray-500/10 dark:bg-gray-500/10 rounded-xl shadow-lg hover:shadow-2xl p-2 backdrop-blur-2xl border border-sky-500/30"
       >
         <img
           src={item.ing}
           className="object-cover w-full h-64 rounded-t-md p-2"
           alt=""
         />
-        <div className="p-5  dark:border-gray-800 rounded-b-lg border-t-0">
+        <div className="p-5 border-gray-800 dark:border-gray-800 rounded-b-lg border-t-0">
           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
             <a
               target="_blank"
               href={item.url}
-              className="transition-colors duration-200 dark:text-gray-100 text-gray-900 hover:text-sky-700 dark:hover:text-sky-700"
+              className="transition-colors duration-200 dark:text-gray-100 text-gray-100 hover:text-sky-700 dark:hover:text-sky-700"
               rel="noreferrer"
             >
               {item.Calgary}
             </a>
-            <span className=" dark:text-gray-300 text-gray-600">
+            <span className=" dark:text-gray-300 text-gray-300">
               — {item.date}
             </span>
           </p>
           <a
             target="_blank"
             href={item.url}
-            className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-sky-700 dark:hover:text-sky-700 dark:text-white"
+            className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-sky-700 dark:hover:text-sky-700 dark:text-gray-100 text-gray-100"
             rel="noreferrer"
           >
             {item.title}
           </a>
-          <p className="mb-2  dark:text-gray-300 text-justify text-gray-700">
+          <p className="mb-2  dark:text-gray-300 text-justify text-gray-300">
             {item.type}
           </p>
 

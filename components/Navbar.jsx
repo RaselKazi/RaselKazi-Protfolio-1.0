@@ -23,7 +23,7 @@ export default function navbar() {
     <header
       className={` fixed w-full z-30  transition duration-300 ease-in-out ${
         top &&
-        "backdrop-blur-lg dark:bg-gray-800/60 border-b border-sky-500/30 shadow-lg"
+        "backdrop-blur-lg bg-gray-800/60 dark:bg-gray-800/60 border-b border-sky-500/30 shadow-lg"
       }`}
     >
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -39,7 +39,7 @@ export default function navbar() {
               <li>
                 <a
                   href="#Home"
-                  className="font-medium tracking-wide  dark:text-white text-gray-700 transition-colors duration-200 hover:text-gray-400"
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
                 >
                   Home
                 </a>
@@ -47,7 +47,7 @@ export default function navbar() {
               <li>
                 <a
                   href="#About"
-                  className="font-medium tracking-wide dark:text-white text-gray-700 transition-colors duration-200 hover:text-gray-400"
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
                 >
                   About
                 </a>
@@ -55,7 +55,7 @@ export default function navbar() {
               <li>
                 <a
                   href="#Portfolio"
-                  className="font-medium tracking-wide dark:text-white text-gray-700 transition-colors duration-200 hover:text-gray-400"
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
                 >
                   Portfolio
                 </a>
@@ -72,7 +72,7 @@ export default function navbar() {
               <li>
                 <a
                   href="#Contact"
-                  className="font-medium tracking-wide dark:text-white text-gray-700 transition-colors duration-200 hover:text-gray-400"
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
                 >
                   Contact
                 </a>
@@ -113,7 +113,7 @@ export default function navbar() {
               onClick={() => setIsMenuOpen(true)}
             >
               <svg
-                className="w-5 text-gray-800 dark:text-sky-500"
+                className="w-5 text-sky-500 dark:text-sky-500"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -132,17 +132,17 @@ export default function navbar() {
             </button>
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
-                <div className="p-5  dark:bg-gray-500/40 bg-white border border-sky-600/40 rounded-lg backdrop-blur-lg">
+                <div className="p-5 bg-gray-500/40 dark:bg-gray-500/40 border border-sky-600/40 rounded-lg backdrop-blur-lg">
                   <div className="flex items-center justify-end mb-4">
                     <div>
                       <button
                         aria-label="Close Menu"
                         title="Close Menu"
-                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-500/10 dark:hover:bg-gray-500/50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-500/50 dark:hover:bg-gray-500/50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         <svg
-                          className="w-5  dark:text-sky-500 text-sky-800 "
+                          className="w-5  dark:text-sky-500 text-sky-500 "
                           viewBox="0 0 24 24"
                         >
                           <path

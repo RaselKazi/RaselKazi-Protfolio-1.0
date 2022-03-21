@@ -4,7 +4,7 @@ import TagTitle from "./TagTitle";
 
 export default function Blog() {
   return (
-    <div id="Blog" className=" relative bg-gray-100 dark:bg-gray-900">
+    <div id="Blog" className=" relative bg-gray-900 dark:bg-gray-900">
       <div className=" absolute top-1/3  left-1/3 h-2/4 w-1/4 bg-blue-500/40 blur-2xl rounded-full"></div>
       <TagTitle title="Blog Section"></TagTitle>
       <div

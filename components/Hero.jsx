@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div
       id="Home"
-      className="relative bg-indigo-100 dark:bg-gray-900 overflow-hidden"
+      className="relative bg-gray-900 dark:bg-gray-900 overflow-hidden"
     >
       {/* absolute section */}
       <div className="animate-pulse absolute top-2 left-2/3 rounded-full h-12 w-12 blur-sm bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
@@ -74,7 +74,7 @@ export default function Hero() {
                 className=" relative w-32 px-4 py-2 rounded-bl-none rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur border border-sky-500/40"
               >
                 <div className=" top-2/3 left-8  absolute bg-sky-400/80 h-3 w-16 rounded-full blur"></div>
-                <h3 className=" flex  dark:text-sky-600 font-extrabold ">
+                <h3 className=" flex text-sky-600 dark:text-sky-600 font-extrabold ">
                   Hello I am
                 </h3>
               </motion.div>
@@ -113,7 +113,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="mb-6 pr-8 sm:pr-4 text-gray-900  text-sm sm:text-base text-justify dark:text-gray-500"
+                className="mb-6 pr-8 sm:pr-4 text-gray-500  text-sm sm:text-base text-justify dark:text-gray-500"
               >
                 I am a Junior Web Developer. I am passionate about coding and
                 problem-solving. I love creating new things and find solutions
