@@ -7,3 +7,70 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+.swiper-pagination-horizontal {
+  
+  bottom: -4% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(6, 93, 255) !important;
+  width: 20px !important;
+  border-radius: 5px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  padding: 4px, 8px !important;
+  background: rgba(6, 93, 255);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white;
+  background: rgb(11, 1, 196);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px !important;
+  font-weight: bold;
+  color: white;
+}
+
+/*------scroll bar---------------------*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0674c3;
+  border: 0px none #525965;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #043994;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

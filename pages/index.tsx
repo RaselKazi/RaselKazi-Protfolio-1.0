@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import About from "../components/About";
 import Blog from "../components/Blog";
+import Certificate from "../components/Certificate";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
       <About></About>
       <Portfolio></Portfolio>
       {/* <Blog></Blog> */}
+      <Certificate></Certificate>
       <Contact></Contact>
       <ScrollToTop></ScrollToTop>
     </Layout>

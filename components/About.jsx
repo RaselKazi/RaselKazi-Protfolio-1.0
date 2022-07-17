@@ -19,7 +19,7 @@ export default function About() {
       <div className="animate-pulse absolute top-16 right-0 rounded-full h h-60 w-60 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
 
       <TagTitle title="About Section"></TagTitle>
-      <div className=" grid grid-cols-1   lg:grid-cols-2  w-full">
+      <div className=" grid grid-cols-1 gap-4 lg:grid-cols-2  w-full">
         <motion.div
           initial="hidden"
           animate={controls}
@@ -30,9 +30,9 @@ export default function About() {
             duration: 1.5,
             stiffness: 300,
           }}
-          className="px-10 py-24 sm:px-24 md:px-28 lg:px-24 xl:px-44 "
+          className="px-8 py-24 sm:px-24 md:px-28 lg:px-24 xl:px-44 "
         >
-          <div className=" relative  cursor-pointer">
+          <div className=" relative  cursor-pointer group">
             <Image
               className=" z-10 rounded-xl saturate-50 transition duration-300  hover:saturate-200 "
               src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645609940/ty5ldchtqzyuah18quxr.jpg"
@@ -41,7 +41,9 @@ export default function About() {
               width={450}
               height={600}
             />
-            <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-6 border-dashed  rounded-xl bg-gray-500/10   backdrop-blur"></div>
+            <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-3   border-dashed  rounded-xl group-hover:rotate-0 transition-all duration-700 bg-gray-500/30   backdrop-blur"></div>
+            <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-6 border-dashed  rounded-xl group-hover:rotate-0 transition-all duration-500 bg-gray-500/40   backdrop-blur"></div>
+            <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-12 group-hover:rotate-0 transition-all duration-700 border-dashed  rounded-xl bg-gray-500/10   backdrop-blur"></div>
           </div>
         </motion.div>
 
@@ -55,19 +57,15 @@ export default function About() {
             duration: 1.5,
             stiffness: 300,
           }}
-          className=" relative flex flex-col justify-center p-8 rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
+          className=" relative flex flex-col justify-center px-10 py-12 rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
         >
           <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl text-gray-400 dark:text-gray-400 ">
             I am a Junior Web Developer.
           </h5>
           <p className="mb-5  text-gray-500 dark:text-gray-500">
             <span className="font-bold">
-              I love creating new things and find solutions to real-life
-              problems.
-            </span>
-            I am passionate about solving problems using novel ideas and
-            iterating quickly on my ideas to optimize them for scalability. and
-            my expertise areas are HTML, CSS, Bootstrap, JavaScript, ES6, React
+            {`I've been actively involved in the Software Development`}
+            </span> my expertise areas are HTML, CSS, Bootstrap, JavaScript, ES6, React
             js, MongoDB, Express.js, Node JS, and Typescript. I love to learn
             new things. Now I am learning Python, Data structure and Algorithm
             <br /> I also improve myself every day, optimizing my workflow in

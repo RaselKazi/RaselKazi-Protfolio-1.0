@@ -1,18 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectButton from "./ProjectButton";
 import ProjectList from "./ProjectList";
 import { items } from "../public/Database";
 import TagTitle from "./TagTitle";
 import { useScroll } from "../hook/useScroll";
-const category = ["all", ...new Set([...items.map((i) => i.category)])];
+const category = ["all",  ...new Set([...items.map((i) => i.category)])];
 
 export default function Portfolio() {
+
   const [element, controls] = useScroll();
   const [portfolio, setProtfolio] = useState(items);
   const [menuItem, setMenuItem] = useState(category);
   const [active, setActive] = useState("all");
-
-  console.log(category);
 
   const filterData = (button) => {
     if (button === "all") {
@@ -20,11 +19,21 @@ export default function Portfolio() {
       setActive("all");
       return;
     }
-
-    setActive(button);
-    const filterItem = items.filter((item) => item.category === button);
-    setProtfolio(filterItem);
+    
+   setActive(button);
+      const filterItem = items.filter((item) => item.category === button);
+      setProtfolio(filterItem);
+   
   };
+
+  useEffect(() => {
+    // Button is displayed after scrolling for 500 pixels
+      if (window.outerWidth < 650) {
+        setActive("nextjs");
+        const filterItem = items.filter((item) => item.category === "nextjs");
+      setProtfolio(filterItem);
+      } 
+  }, []);
 
   return (
     <div
@@ -32,6 +41,7 @@ export default function Portfolio() {
       id="Portfolio"
       className="dark:bg-gray-900 bg-gray-900 relative overflow-hidden"
     >
+      {console.log(window.outerWidth)}
       <div className="animate-bounce absolute top-28 left-1/3 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
       <div className="bg-gray-400/10 backdrop-blur ">
         <div className="px-4  py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">

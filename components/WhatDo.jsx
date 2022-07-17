@@ -35,7 +35,7 @@ export default function WhatDo() {
               Web Development
             </p>
             <p className="text-sm dark:text-gray-500 text-gray-200 text-center">
-              im a Web Development for 1 years
+              {`I'm a Web Developer`}
             </p>
           </motion.div>
           <motion.div
@@ -58,7 +58,8 @@ export default function WhatDo() {
               YouTuber
             </p>
             <p className="text-sm text-center dark:text-gray-500 text-gray-500">
-              im a Web Development for 1 years
+            {`I'm a YouTuber`}
+              
             </p>
           </motion.div>
           <motion.div
@@ -81,7 +82,7 @@ export default function WhatDo() {
               App Development
             </p>
             <p className="text-sm dark:text-gray-500 text-gray-500 text-center">
-              im a Web Development for 1 years
+            {`I'm a App Development`}
             </p>
           </motion.div>
         </div>
