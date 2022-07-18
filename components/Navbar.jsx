@@ -160,7 +160,7 @@ export default function navbar() {
                           href="#Home"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                        >
+                  onClick={() => setIsMenuOpen(false)}>
                           Home
                         </a>
                       </li>
@@ -169,7 +169,7 @@ export default function navbar() {
                           href="#About"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                        >
+                  onClick={() => setIsMenuOpen(false)}>
                           About
                         </a>
                       </li>
@@ -178,7 +178,7 @@ export default function navbar() {
                           href="#Portfolio"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                        >
+                  onClick={() => setIsMenuOpen(false)}>
                           Portfolio
                         </a>
                       </li>
@@ -197,7 +197,7 @@ export default function navbar() {
                           href="#Contact"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                        >
+                  onClick={() => setIsMenuOpen(false)}>
                           Contact
                         </a>
                       </li>

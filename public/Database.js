@@ -66,7 +66,7 @@ export const items = [
     type: "Responsive MERN Stack project with firebase authentication",
     demo: "https://apartment-hun.web.app/",
     source: "https://github.com/RaselKazi/-apartment-hunt",
-    category: "nextjs",
+    category: "mern",
     icon: [
       "html5-2",
       "css",

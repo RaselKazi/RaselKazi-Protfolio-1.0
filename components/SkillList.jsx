@@ -35,12 +35,12 @@ export default function skillList() {
             <div key={item.link} className=" relative">
               <img
                 className="transition duration-200  
-              p-1  h-11 w-11 m-1 cursor-pointer p-3 rounded-md bg-gray-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
+              p-[0.24rem] md:p-1  h-8  w-8 md:h-11  md:w-11 m-0.5 md:m-1 cursor-pointer p-3 rounded-md bg-gray-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
                 src={`/icon/${item.link}.svg`}
                 alt=""
               />
               <div
-                className={`absolute h-5 w-5  -bottom-1 left-4 blur bg-${item.color}-500/80`}
+                className={`absolute h-3 w-3 md:h-5 md:w-5  -bottom-1 left-3 blur bg-${item.color}-500/80`}
               ></div>
             </div>
           );

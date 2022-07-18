@@ -146,8 +146,8 @@ export default function Hero() {
                   }}
                   target="_blank"
                   href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
-                  className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-full  bg-gradient-to-t from-cyan-500
-                  to-blue-600 hover:scale-110 focus:shadow-outline focus:outline-none mr-4 bg-cyan-500 shadow-xl shadow-cyan-500/30"
+                  className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-lg  bg-gradient-to-t from-sky-500
+                  to-sky-900 hover:scale-110 focus:shadow-outline focus:outline-none mr-4  shadow-xl shadow-sky-500/30"
                   rel="noreferrer"
                 >
                   Download CV

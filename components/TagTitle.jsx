@@ -3,7 +3,7 @@ import React from "react";
 export default function TagTitle({ title }) {
   return (
     <div className=" flex justify-center items-center ">
-      <p className=" my-10 bg-gray-500/20 bg-opacity-25 font-bold uppercase rounded-md text-sky-500 border border-sky-500/30 px-4 py-2 backdrop-blur">
+      <p className=" my-10 bg-gradient-to-t from-sky-400 to-sky-900 bg-opacity-25 font-bold uppercase rounded-md text-white px-4 py-2 shadow-xl shadow-sky-500/40">
         {title}
       </p>
     </div>

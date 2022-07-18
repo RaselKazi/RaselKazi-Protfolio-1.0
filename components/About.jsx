@@ -11,7 +11,7 @@ export default function About() {
     <div
       ref={element}
       id="About"
-      className=" relative px-4 py-10 mx-auto bg-gray-900 md:px-24 dark:bg-gray-900 overflow-hidden"
+      className=" relative mb-20   mx-auto bg-gray-900 dark:bg-gray-900 overflow-hidden"
     >
       <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-700/50  rounded-full blur-3xl"></div>
 
@@ -19,7 +19,7 @@ export default function About() {
       <div className="animate-pulse absolute top-16 right-0 rounded-full h h-60 w-60 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
 
       <TagTitle title="About Section"></TagTitle>
-      <div className=" grid grid-cols-1 gap-4 lg:grid-cols-2  w-full">
+      <div className="px-8 xl:px-20 grid grid-cols-1 gap-8 lg:grid-cols-2  w-full">
         <motion.div
           initial="hidden"
           animate={controls}
@@ -30,7 +30,7 @@ export default function About() {
             duration: 1.5,
             stiffness: 300,
           }}
-          className="px-8 py-24 sm:px-24 md:px-28 lg:px-24 xl:px-44 "
+          className=" mx-16 my-12 lg:mx-20 lg:my-16 xl:mx-48 xl:my-20  "
         >
           <div className=" relative  cursor-pointer group">
             <Image
@@ -38,8 +38,8 @@ export default function About() {
               src="https://res.cloudinary.com/dfwtzokma/image/upload/v1645609940/ty5ldchtqzyuah18quxr.jpg"
               alt="Picture of the author"
               layout="responsive"
-              width={450}
-              height={600}
+              width={470}
+              height={500}
             />
             <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-3   border-dashed  rounded-xl group-hover:rotate-0 transition-all duration-700 bg-gray-500/30   backdrop-blur"></div>
             <div className=" absolute top-0 left-0 w-full h-full border-sky-500 border-2 rotate-6 border-dashed  rounded-xl group-hover:rotate-0 transition-all duration-500 bg-gray-500/40   backdrop-blur"></div>
@@ -57,21 +57,16 @@ export default function About() {
             duration: 1.5,
             stiffness: 300,
           }}
-          className=" relative flex flex-col justify-center px-10 py-12 rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
+          className=" relative flex flex-col justify-center p-6 lg:p-12  rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
         >
-          <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl text-gray-400 dark:text-gray-400 ">
+          <h5 className="mb-3 text-3xl font-extrabold leading-none  text-gray-400 dark:text-gray-400 ">
             I am a Junior Web Developer.
           </h5>
-          <p className="mb-5  text-gray-500 dark:text-gray-500">
+          <p className="mb-5  text-gray-500 dark:text-gray-500 text-sm lg:text-lg text-justify">
             <span className="font-bold">
-            {`I've been actively involved in the Software Development`}
-            </span> my expertise areas are HTML, CSS, Bootstrap, JavaScript, ES6, React
-            js, MongoDB, Express.js, Node JS, and Typescript. I love to learn
-            new things. Now I am learning Python, Data structure and Algorithm
-            <br /> I also improve myself every day, optimizing my workflow in
-            every step of my life. I am always determined to achieve my goals. I
-            am currently seeking an opportunity to extend my web development
-            skills and knowledge.
+            {`Hey, there 👋 I'm Rasel Kazi from Bangladesh. `}
+            </span>
+                I am a self-taught web developer who always passionate about expanding and broadening  technical knowledge by learning new technologies. I am always eager to understand how and why of the technologies before deep diving into it. Currently, I am expanding my knowledge on Javascript
           </p>
 
           <div className="">
@@ -81,8 +76,8 @@ export default function About() {
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-full  bg-gradient-to-t from-cyan-500
-                  to-blue-600 hover:scale-110 focus:shadow-outline focus:outline-none mr-4 bg-cyan-500 shadow-xl shadow-cyan-500/30"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-lg  bg-gradient-to-t from-pink-500
+                  to-pink-900 hover:scale-110 focus:shadow-outline focus:outline-none mr-4 shadow-xl shadow-pink-500/30"
               rel="noreferrer"
             >
               Download CV

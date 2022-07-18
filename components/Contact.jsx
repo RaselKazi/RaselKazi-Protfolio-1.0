@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import ContactForm from "./ContactForm";
 import TagTitle from "./TagTitle";
 import { motion } from "framer-motion";
@@ -32,55 +33,53 @@ export default function Contact() {
             <div>
               <a
                 href="#Contact"
-                className="flex  text-gray-100 rounded-md my-2 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex items-center rounded-md  bg-gradient-to-t from-red-300
+                to-red-900 hover:scale-105 transition-all duration-300 shadow-lg shadow-red-500/30 text-gray-100 py-2 px-3 my-4"
               >
-                <svg
-                  className="w-6 h-6 mr-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <Image
+              className=" "
+              src="/icon/location.png"
+              alt="Picture"
+              layout="fixed"
+              width={35}
+              height={35}
+            />
 
-                <span className="">Chittagong, Bangladesh</span>
+                <span className="ml-2">Chittagong, Bangladesh</span>
               </a>
 
               <a
                 href="#Contact"
-                className="flex text-gray-100  my-4 dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex items-center rounded-md  bg-gradient-to-t from-gray-400
+                to-gray-700 hover:scale-105 transition-all duration-300 shadow-xl shadow-gray-500/30 text-gray-100 py-2 px-3 my-4"
               >
-                <svg
-                  className="w-6 h-6 mr-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
+                <Image
+              className=""
+              src="/icon/mobile.png"
+              alt="Picture"
+              layout="fixed"
+              width={35}
+              height={35}
+            />
 
-                <span className="">008801830225388</span>
+                <span className="ml-2">008801830225388</span>
               </a>
 
               <a
                 href="#Contact"
-                className="flex   text-gray-100 rounded-md dark:text-gray-100 dark:hover:text-blue-500 hover:text-blue-500"
+                className="flex items-center rounded-md  bg-gradient-to-t from-pink-400
+                to-pink-800 hover:scale-105 transition-all duration-300 shadow-xl shadow-pink-400/30 text-gray-100 py-2 px-3 my-4"
               >
-                <svg
-                  className="w-6 h-6 mr-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
+               <Image
+              className=" "
+              src="/icon/email.png"
+              alt="Picture"
+              layout="fixed"
+              width={35}
+              height={35}
+            />
 
-                <span className="">raselkazi080@gmail.com</span>
+                <span className="ml-3">raselkazi080@gmail.com</span>
               </a>
             </div>
           </div>

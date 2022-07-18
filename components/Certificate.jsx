@@ -33,6 +33,10 @@ export default function Certificate() {
           navigation={true}
           className="mySwiper"
           breakpoints={{
+            '340': {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
             '440': {
               slidesPerView: 2,
               spaceBetween: 10,
