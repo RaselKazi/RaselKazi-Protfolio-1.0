@@ -32,7 +32,7 @@ export default function Contact() {
           <div className=" flex justify-center items-center">
             <div>
             <div className=" flex items-center  relative group transition-all duration-300 cursor-pointer mb-7">
-              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-4  absolute bg-sky-500/80 h-4 w-8 group-hover:h-6 group-hover:w-10 rounded-full blur transition-all duration-300">
+              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-5  absolute bg-red-500/80 h-4 w-7 group-hover:h-6 group-hover:w-9 rounded-full blur transition-all duration-300">
                 </div> <Image
               className=" group-hover:scale-110 scale-75 transition-all duration-300"
               src="/icon/location.png"
@@ -52,7 +52,7 @@ export default function Contact() {
            </div>
 
            <div className=" flex items-center  relative group transition-all duration-300 cursor-pointer mb-7">
-              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-4  absolute bg-sky-500/80 h-4 w-8 group-hover:h-6 group-hover:w-10 rounded-full blur transition-all duration-300">
+              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-4  absolute bg-blue-500/80 h-4 w-8 group-hover:h-6 group-hover:w-9 rounded-full blur transition-all duration-300">
                 </div> <Image
               className=" group-hover:scale-110 scale-75 transition-all duration-300"
               src="/icon/mobile.png"
@@ -72,7 +72,7 @@ export default function Contact() {
            </div> 
 
            <div className=" flex items-center  relative group transition-all duration-300 cursor-pointer mb-7">
-              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-4  absolute bg-sky-500/80 h-4 w-8 group-hover:h-6 group-hover:w-10 rounded-full blur transition-all duration-300">
+              <div className="flex items-center  relative p-4 mr-6  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group transition-all duration-300 cursor-pointer"><div className=" top-3/4 left-4  absolute bg-pink-400/60 h-4 w-8 group-hover:h-6 group-hover:w-9 rounded-full blur transition-all duration-300">
                 </div> <Image
               className=" group-hover:scale-110 scale-75 transition-all duration-300"
               src="/icon/email.png"
@@ -85,14 +85,8 @@ export default function Contact() {
        
                 
         
-<div className="flex items-center  relative p-3  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group-hover:translate-x-2 transition-all duration-500"><div className=" top-3/4 left-4  absolute bg-sky-500/80 h-4 w-10/12 rounded-full blur-lg"></div> <span className="ml-2 text-lg  duration-500">raselkazi080@gmail.com</span></div>
-                
-                
-                
+<div className="flex items-center  relative p-3  rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 font-bold text-gray-300 group-hover:translate-x-2 transition-all duration-500"><div className=" top-3/4 left-4  absolute bg-sky-500/80 h-4 w-10/12 rounded-full blur-lg"></div> <span className="ml-2 text-lg  duration-500">raselkazi080@gmail.com</span></div>   
            </div>
-           
-      
- 
 
             </div>
           </div>

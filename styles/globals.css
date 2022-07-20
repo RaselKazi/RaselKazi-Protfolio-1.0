@@ -74,3 +74,14 @@ html {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+
+.Certificate-section {
+  background-image: url('../public/image/bg-01.jpg');
+  padding: 80px 0 80px;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+

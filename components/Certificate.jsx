@@ -15,7 +15,8 @@ export default function Certificate() {
   return (
     <div 
     id="Certificate"
-    className=" relative px-4 py-10 mx-auto bg-gray-900 md:px-24 dark:bg-gray-900 overflow-hidden"> 
+    className="Certificate-section relative px-4 py-10 mx-auto bg-gray-900 md:px-24 dark:bg-gray-900 overflow-hidden">
+      <div className=" absolute top-0 left-0 w-full h-full dark:bg-gray-900/70  bg-gray-900/70"></div> 
     <TagTitle title="Certificate Section"></TagTitle>
     <div className="   w-full">
         <div className="" >
