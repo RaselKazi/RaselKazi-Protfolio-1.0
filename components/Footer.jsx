@@ -14,8 +14,8 @@ export default function Footer() {
   return (
     <div ref={element} className="relative bg-gray-900 overflow-hidden">
       <div className="border-t border-sky-500/30 bg-gray-500/5 text-sky-500/80 z-10 backdrop-blur">
-        <div className="animate-pulse absolute top-1/2 left-1/4 rounded-full h-16 w-16 blur-sm bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
-        <div className=" absolute -bottom-20 right-1/4 rounded-full h-52 w-52 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
+        <div className=" absolute top-1/4 left-1/3 rounded-full h-20 w-20 blur bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
+        {/* <div className=" absolute -bottom-20 right-1/4 rounded-full h-52 w-52 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div> */}
         <div className="px-4 pt-16 mx-auto  md:px-24 lg:px-8">
           <div className=" flex flex-col justify-center items-center">
             <motion.div

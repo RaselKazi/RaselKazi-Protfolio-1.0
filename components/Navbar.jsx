@@ -132,7 +132,7 @@ export default function navbar() {
             </button>
             {isMenuOpen && (
               <div className="absolute top-0 left-0 w-full">
-                <div className="p-5 bg-gray-500/40 dark:bg-gray-500/40 border border-sky-600/40 rounded-lg backdrop-blur-lg">
+                <div className="p-5 bg-gray-500/50 dark:bg-gray-500/50 border border-sky-600/40 rounded-lg backdrop-blur-3xl">
                   <div className="flex items-center justify-end mb-4">
                     <div>
                       <button

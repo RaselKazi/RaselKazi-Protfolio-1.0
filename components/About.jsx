@@ -15,8 +15,8 @@ export default function About() {
     >
       <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-700/50  rounded-full blur-3xl"></div>
 
-      <div className="animate-bounce absolute top-1/3 left-1/2 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
-      <div className="animate-pulse absolute top-16 right-0 rounded-full h h-60 w-60 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
+      {/* <div className="animate-bounce absolute top-1/3 left-1/2 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div> */}
+      <div className=" absolute bottom-2 right-8 rounded-full h h-60 w-60 blur-lg bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
 
       <TagTitle title="About Section"></TagTitle>
       <div className="px-8 xl:px-20 grid grid-cols-1 gap-8 lg:grid-cols-2  w-full">
@@ -30,7 +30,7 @@ export default function About() {
             duration: 1.5,
             stiffness: 300,
           }}
-          className=" mx-16 my-12 lg:mx-20 lg:my-16 xl:mx-48 xl:my-20  "
+          className=" mx-16 my-12 lg:mx-20 lg:my-16 xl:mx-48 xl:my-20 hidden md:block"
         >
           <div className=" relative  cursor-pointer group">
             <Image

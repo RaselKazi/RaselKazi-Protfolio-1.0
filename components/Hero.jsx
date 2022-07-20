@@ -15,8 +15,8 @@ export default function Hero() {
     >
       {/* absolute section */}
       <div className="animate-pulse absolute top-2 left-2/3 rounded-full h-12 w-12 blur-sm bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
-      <div className="animate-pulse absolute top-1/3 left-2/4 rounded-full h-16 w-16 blur-sm bg-gradient-to-r from-gray-900/40  to-pink-700 "></div>
-      <div className="animate-pulse absolute top-52 right-10 rounded-full h-52 w-52 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
+      
+      <div className=" absolute  right-10 bottom-5 rounded-full h-56  w-56 blur-xl bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
       <div className=" absolute -top-12 -left-10 rounded-full h-3/6 w-2/6 blur-2xl  bg-gradient-to-r from-purple-900/30  rotate-0 to-pink-900/20 "></div>
 
       <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -171,21 +171,29 @@ export default function Hero() {
             </div>
           </div>
 
-          <a
+ <div className=" flex items-center justify-center relative">  
+ 
+ <a
             href="#About"
-            aria-label="Scroll down"
-            className="flex animate-bounce items-center justify-center w-10 h-10 mx-auto text-sky-500 duration-300 transform border-2  text-extrabold border-sky-600 rounded-full hover:bg-sky-600 hover:text-white hover:border-sky-600 hover:shadow hover:scale-125"
-          >
-            <svg
+            aria-label="Scroll down" 
+            className=" flex items-center justify-center relative h-12 w-12 p-3  rounded-3xl bg-gray-500/20 hover:bg-gray-500/30 text-sky-500/80 z-10 backdrop-blur-md border border-sky-500/40 transition-all duration-200 font-extrabold text-gray-300">
+      
+                
+        <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="12"
+              width="16"
+              height="16"
               viewBox="0 0 12 12"
               fill="currentColor"
             >
               <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z" />
             </svg>
-          </a>
+                
+            <div className=" animate-pulse top-2/3 left-1  absolute bg-sky-500/50 h-6 w-10 rounded-full blur-lg"></div>    
+       </a> 
+       </div>
+        
+          
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ export default function Portfolio() {
       id="Portfolio"
       className="dark:bg-gray-900 bg-gray-900 relative overflow-hidden"
     >
-      <div className="animate-bounce absolute top-28 left-1/3 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
+      {/* <div className="animate-bounce absolute top-28 left-1/3 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div> */}
       <div className="bg-gray-400/10 backdrop-blur ">
         <div className="px-4  py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
           <TagTitle title={"portfolio Section"}></TagTitle>
