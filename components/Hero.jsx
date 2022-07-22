@@ -92,7 +92,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="my-4 text-6xl sm:text-7xl text-gray-200 uppercase  font-extrabold tracking-widest"
+                className="my-4 text-5xl sm:text-7xl text-gray-200 uppercase  font-extrabold tracking-widest"
               >
                 Rasel Kazi
               </motion.h5>
