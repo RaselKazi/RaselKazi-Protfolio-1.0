@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SocialLink from "./SocialLink";
+import BackgroundAnimation from "./BackgroundAnimation";
 import { motion } from "framer-motion";
 import { veal, fromUp, imageAnimation, easing } from "../utils/Animations";
 import { useScroll } from "../hook/useScroll";
@@ -16,14 +17,14 @@ export default function Hero() {
       {/* absolute section */}
       <div className="animate-pulse absolute top-2 left-2/3 rounded-full h-12 w-12 blur-sm bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
       
-      <div className=" absolute  right-10 bottom-5 rounded-full h-56  w-56 blur-xl bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
-      <div className=" absolute -top-12 -left-10 rounded-full h-3/6 w-2/6 blur-2xl  bg-gradient-to-r from-purple-900/30  rotate-0 to-pink-900/20 "></div>
+      <div className=" absolute  -right-10 bottom-10 rounded-full h-56  w-56 blur-2xl bg-gradient-to-l from-sky-500/30 to-pink-500/20  "></div>
+      <div className=" absolute top-0 left-0 rounded-3xl h-96 w-96 blur-3xl  bg-gradient-to-br from-sky-500/30  rotate-0 to-pink-500/20 "></div>
 
       <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="relative">
           <div
             ref={element}
-            className="px-4 py-16 mx-auto grid gap-10 lg:grid-cols-2"
+            className="px-4  mx-auto grid gap-10 lg:grid-cols-2"
           >
             <motion.div
               initial="hidden"
@@ -58,11 +59,14 @@ export default function Hero() {
                 </div>
               </div>
             </motion.div>
+            <div className="relative"> <BackgroundAnimation></BackgroundAnimation>
+            
             <div
               ref={element}
-              className="lg:pr-10 pt-36 lg:pt-2 mr-12  md:mr-4"
+              className=" absolute top-0 lg:top-1/4 left-0 w-full h-full  lg:pr-10 pt-36 lg:pt-2 mr-12  md:mr-4 "
             >
-              <motion.div
+               <div className="flex flex-col justify-center ">
+               {/* <motion.div
                 initial="hidden"
                 animate={controls}
                 variants={fromUp}
@@ -73,11 +77,12 @@ export default function Hero() {
                 }}
                 className=" relative w-32 px-4 py-2 rounded-bl-none rounded-full bg-gray-500/20 text-sky-500/80 z-10 backdrop-blur border border-sky-500/40"
               >
+                
                 <div className=" top-2/3 left-8  absolute bg-sky-400/80 h-3 w-16 rounded-full blur"></div>
                 <h3 className=" flex text-sky-600 dark:text-sky-600 font-extrabold ">
                   Hello I am
                 </h3>
-              </motion.div>
+              </motion.div> */}
               <motion.h5
                 initial="hidden"
                 animate={controls}
@@ -87,7 +92,7 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="my-4 text-4xl sm:text-5xl text-gray-300 uppercase font-bold tracking-widest"
+                className="my-4 text-6xl sm:text-7xl text-gray-200 uppercase  font-extrabold tracking-widest"
               >
                 Rasel Kazi
               </motion.h5>
@@ -100,11 +105,41 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="text-2xl sm:text-3xl mb-2 font-bold capitalize text-gray-400"
+                className="text-3xl sm:text-4xl mb-2 font-bold capitalize text-gray-300"
               >
                 web developer
               </motion.h5>
-              <motion.p
+              <svg
+                    width="350"
+                    height="12"
+                    viewBox="0 0 208 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
+                      fill="url(#paint0_linear)"
+                      fillOpacity="0.43"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear"
+                        x1="-4.30412e-10"
+                        y1="0.5"
+                        x2="208"
+                        y2="0.500295"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stopColor="white" />
+                        <stop
+                          offset="0.79478"
+                          stopColor="white"
+                          stopOpacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+              {/* <motion.p
                 initial="hidden"
                 animate={controls}
                 variants={fromUp}
@@ -113,14 +148,14 @@ export default function Hero() {
                   ease: easing,
                   duration: 1,
                 }}
-                className="mb-6 pr-8 sm:pr-4 text-gray-500  text-sm sm:text-base text-justify dark:text-gray-500"
+                className="mb-2 pr-8 sm:pr-4 text-gray-500  text-sm sm:text-base text-justify dark:text-gray-500"
               >
                 I am a Junior Web Developer. I am passionate about coding and
                 problem-solving. I love creating new things and find solutions
                 to real-life problems. I always looking to deliver a
                 high-quality product.
               </motion.p>
-              <hr className="mb-5 border-gray-400/40" />
+              
               <motion.div
                 initial="hidden"
                 animate={controls}
@@ -131,7 +166,7 @@ export default function Hero() {
                   duration: 1,
                 }}
               >
-                <SocialLink></SocialLink>
+               
               </motion.div>
 
               <div className=" my-6">
@@ -153,25 +188,17 @@ export default function Hero() {
                   Download CV
                 </motion.a>
 
-                <motion.a
-                  initial="hidden"
-                  animate={controls}
-                  variants={veal}
-                  transition={{
-                    delay: 1.3,
-                    duration: 1,
-                  }}
-                  href="#About"
-                  aria-label=""
-                  className="inline-flex items-center  transition duration-200 text-cyan-500 py-3 px-6  font-bold text-lg hover:scale-110 "
-                >
-                  About More
-                </motion.a>
+               </div> */}
+              
+               
               </div>
-            </div>
+
+            </div></div>
+            
           </div>
 
- <div className=" flex items-center justify-center relative">  
+
+ {/* <div className=" flex items-center justify-center relative">  
  
  <a
             href="#About"
@@ -192,8 +219,9 @@ export default function Hero() {
             <div className=" animate-pulse top-2/3 left-1  absolute bg-sky-500/50 h-6 w-10 rounded-full blur-lg"></div>    
        </a> 
        </div>
-        
-          
+         */}
+         <div className=" flex justify-center items-start"><SocialLink></SocialLink></div>
+           
         </div>
       </div>
     </div>

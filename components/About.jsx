@@ -13,10 +13,10 @@ export default function About() {
       id="About"
       className=" relative mb-20   mx-auto bg-gray-900 dark:bg-gray-900 overflow-hidden"
     >
-      <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-700/50  rounded-full blur-3xl"></div>
+      <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-500/50  rounded-full blur-3xl"></div>
 
       {/* <div className="animate-bounce absolute top-1/3 left-1/2 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div> */}
-      <div className=" absolute bottom-2 right-8 rounded-full h h-60 w-60 blur-lg bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div>
+      <div className=" absolute bottom-10 right-0 rounded-full h h-60 w-80 rotate-45 blur-2xl bg-gradient-to-r from-purple-500/30  to-sky-500/30 "></div>
 
       <TagTitle title="About Section"></TagTitle>
       <div className="px-8 xl:px-20 grid grid-cols-1 gap-8 lg:grid-cols-2  w-full">
@@ -47,16 +47,8 @@ export default function About() {
           </div>
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          animate={controls}
-          variants={veal}
-          transition={{
-            delay: 0.6,
-            ease: easing,
-            duration: 1.5,
-            stiffness: 300,
-          }}
+        <div
+          
           className=" relative flex flex-col justify-center p-6 lg:p-12  rounded-lg bg-gray-500/10 text-sky-500/80 z-10 backdrop-blur"
         >
           <h5 className="mb-3 text-3xl font-extrabold leading-none  text-gray-400 dark:text-gray-400 ">
@@ -83,7 +75,7 @@ export default function About() {
               Download CV
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

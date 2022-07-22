@@ -19,7 +19,7 @@ export default function WhatDo() {
           <motion.div
            initial="hidden"
            animate={controls}
-           variants={veal}
+           variants={reveal}
            transition={{
              delay: 0.2,
              ease: easing,

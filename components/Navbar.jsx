@@ -96,7 +96,7 @@ export default function navbar() {
               <a
                 target="_blank"
                 href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-full hover:scale-110 focus:shadow-outline focus:outline-none bg-cyan-500 shadow-xl shadow-cyan-500/30"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-full hover:scale-110 focus:shadow-outline focus:outline-none bg-gradient-to-tr from-cyan-400 to-sky-700 shadow-xl shadow-cyan-500/40"
                 aria-label="Download CV"
                 title="Download CV"
                 rel="noreferrer"

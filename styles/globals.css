@@ -85,3 +85,19 @@ html {
   z-index: 1;
 }
 
+.skill-item {
+  transform: translateX(100%);
+  opacity: 0;
+  animation:slideInRight forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

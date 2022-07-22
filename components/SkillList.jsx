@@ -26,9 +26,13 @@ export default function skillList() {
   ];
   return (
     <div>
-      <p className="mb-1 text-2xl uppercase font-bold text-gray-50 dark:text-gray-50">
+      <div className=" relative py-3"> 
+      <div className=" absolute bottom-2 left-0 h-1 w-24 rounded-full bg-gradient-to-r from-sky-500 to-pink-500"></div>
+        <p className="mb-1 text-2xl uppercase font-bold text-gray-50 dark:text-gray-50">
         Skills
-      </p>
+      </p></div>
+     
+     
       <div className="flex flex-row flex-wrap items-center font-semibold transition-colors duration-200 mb-4">
         {icon.map((item) => {
           return (
