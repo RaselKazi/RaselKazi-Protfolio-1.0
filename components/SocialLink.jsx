@@ -15,7 +15,7 @@ export default function SocialLink() {
           <div className=" top-2 right-2  absolute bg-blue-50 h-6 w-6 rounded-full blur-sm"></div>
           <a
             target="_blank"
-            href="https://www.facebook.com/freelancer.raselkazi"
+            href="https://www.facebook.com/profile.php?id=100074320713056"
             rel="noreferrer"
             className="  backdrop-blur flex items-center justify-center h-14 w-14 text-xl font-bold text-center  transition duration-200 rounded-full  bg-gradient-to-t from-blue-600/5
                   to-blue-800/30"

@@ -95,7 +95,7 @@ export default function navbar() {
             <li>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
+                href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded-full hover:scale-110 focus:shadow-outline focus:outline-none bg-gradient-to-tr from-cyan-400 to-sky-700 shadow-xl shadow-cyan-500/40"
                 aria-label="Download CV"
                 title="Download CV"
@@ -204,7 +204,7 @@ export default function navbar() {
                       <li>
                         <a
                           target="_blank"
-                          href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
+                          href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
                           className="inline-flex items-center w-full justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200    hover:from-blue-400 focus:shadow-outline rounded-full  bg-gradient-to-t from-cyan-500
                   to-blue-600  hover:scale-105 focus:shadow-outline focus:outline-none mr-4"
                           rel="noreferrer"

@@ -67,7 +67,7 @@ export default function About() {
           <div className="flex items-center">
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
               className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-lg  bg-gradient-to-t from-pink-500
                   to-pink-900 hover:scale-110 focus:shadow-outline focus:outline-none mr-4 shadow-xl shadow-pink-500/30"
               rel="noreferrer"

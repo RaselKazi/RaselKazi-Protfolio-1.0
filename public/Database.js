@@ -1,6 +1,25 @@
 export const items = [
   {
     id: "10",
+    url: "online_quiz",
+    title: "Online Quiz",
+    type: "Online Quiz is a Education website more than 200 people use this website",
+    demo: "https://online-quzi-2.vercel.app/",
+    source: "https://github.com/RaselKazi/online-quiz",
+    category: "nextjs",
+    icon: [
+      "html5-2",
+      "css",
+      "tailwindcss",
+      "typescript",
+      "javascript",
+      "nextjs-3",
+      "mongodb-icon-1",
+      "jwt-3",
+    ],
+  },
+  {
+    id: "10",
     url: "nextecom",
     title: "E Market",
     type: "E Market is a responsive MERN Stack E-commerce website",
