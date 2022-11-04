@@ -1,0 +1,376 @@
+.window {
+  height: 20em;
+  width: 20em;
+  position: relative;
+  perspective: 75em;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.laptop {
+  height: 11em;
+  width: 15em;
+  position: absolute;
+  left: 2.5em;
+  top: 4.5em;
+  transition: all 1000ms;
+  transform: rotateY(40deg) rotateX(55deg);
+  transform-style: preserve-3d;
+}
+
+.laptop + .shadow {
+  position: absolute;
+  z-index: -1;
+  height: 11em;
+  width: 15em;
+  left: 2.5em;
+  top: 4.5em;
+  background: #000f;
+  opacity: 0.05;
+  transform: translateY(6em) rotateX(90deg) rotateZ(-40deg);
+  filter: blur(2em);
+  transition: all 1000ms;
+}
+
+.window:hover .laptop + .shadow {
+  transform: translateY(7.5em) rotateX(90deg) rotateZ(20deg);
+  filter: blur(0.5em);
+  opacity: 0.07;
+}
+
+.window:hover .laptop {
+  transform: rotateY(-20deg) rotateX(75deg);
+  top: 9em;
+}
+
+.laptop .base {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform-style: preserve-3d;
+}
+
+.laptop .base:after {
+  content: "";
+  position: absolute;
+  bottom: 0.2em;
+  top: 0.2em;
+  left: 0.2em;
+  right: 0.2em;
+  background: #0005;
+  transition: all 800ms;
+  filter: blur(0.1em);
+}
+
+.window:hover .laptop .base:after {
+  bottom: 100%;
+  filter: blur(1em);
+  background: #0000;
+}
+
+.laptop .base .side {
+  position: absolute;
+}
+
+.laptop .base .side.top {
+  background: linear-gradient(45deg, #bbb 0%, #999 30%, #666 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.laptop .base .side.top:before {
+  content: "";
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  top: 0.5em;
+  bottom: 5.5em;
+  border-radius: 0.5em;
+  background-color: #222;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 0.9em,
+      #333 0.9em,
+      #333 1em
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 0.9em,
+      #333 0.9em,
+      #333 1em
+    );
+}
+
+.laptop .base .side.top:after {
+  content: "";
+  position: absolute;
+  left: 4.5em;
+  right: 4.5em;
+  top: 6em;
+  bottom: 1em;
+  background: #fff2;
+  border-radius: 0.5em;
+  border: 0.05em solid #0003;
+}
+
+.laptop .base .side.bottom {
+  background: linear-gradient(45deg, #bbb 0%, #999 30%, #666 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(-0.3em) rotateX(180deg);
+}
+
+.laptop .base .side.right {
+  background: #777;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3em;
+  transform: translateX(14.85em) translateZ(-0.15em) rotateY(90deg);
+}
+
+.laptop .base .side.left {
+  background: #777;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.3em;
+  transform: translateX(-0.15em) translateZ(-0.15em) rotateY(90deg);
+}
+
+.laptop .base .side.right:before,
+.laptop .base .side.right:after,
+.laptop .base .side.left:before,
+.laptop .base .side.left:after {
+  content: "";
+  background: #000a;
+  width: 0.15em;
+  height: 0.5em;
+  position: absolute;
+  left: 0.05em;
+  border-radius: 1em;
+}
+
+.laptop .base .side.right:before,
+.laptop .base .side.left:before {
+  top: 0.5em;
+}
+
+.laptop .base .side.right:after,
+.laptop .base .side.left:after {
+  top: 1.3em;
+}
+
+.laptop .base .side.front {
+  background: #afafaf;
+  top: 0;
+  height: 0.3em;
+  left: 0;
+  right: 0;
+  transform: translateY(10.85em) translateZ(-0.15em) rotateX(90deg);
+}
+
+.laptop .base .side.back {
+  background: #afafaf;
+  top: 0;
+  height: 0.3em;
+  left: 0;
+  right: 0;
+  transform: translateY(-0.15em) translateZ(-0.15em) rotateX(90deg);
+}
+
+.laptop .lid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 800ms;
+  transform-origin: top;
+  transform-style: preserve-3d;
+}
+
+.window:hover .laptop .lid {
+  transform: rotateX(115deg);
+}
+
+.laptop .side {
+  box-shadow: 0 0 0.05em 0em #aaa;
+}
+
+.laptop .lid .side {
+  position: absolute;
+}
+
+.laptop .lid .side.top {
+  background: linear-gradient(45deg, #bbb 0%, #999 30%, #666 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(0.2em);
+}
+
+.laptop .lid .side.top:before {
+  content: "";
+  position: absolute;
+  background: #0003;
+  border-radius: 50%;
+  top: 4.7em;
+  bottom: 4.7em;
+  left: 6.7em;
+  right: 6.7em;
+}
+
+.laptop .lid .side.bottom {
+  background: #222;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotateX(180deg);
+}
+
+.laptop .lid .side.bottom:before {
+  content: "";
+  position: absolute;
+  height: 0.3em;
+  width: 2em;
+  bottom: 0.3em;
+  left: 6.5em;
+  background: #fff3;
+  border-radius: 2em;
+}
+
+.laptop .lid .side.bottom:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    25deg,
+    transparent 25%,
+    #fff1 27%,
+    #fff4 40%,
+    transparent 45%
+  );
+  background-position: 0% 300%;
+  background-size: 40em 40em;
+  transition: all 800ms;
+}
+
+.window:hover .laptop .lid .side.bottom:after {
+  background-position: 0% 0%;
+}
+
+.laptop .lid .side.right {
+  background: #777;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.2em;
+  transform: translateX(14.9em) translateZ(0.1em) rotateY(90deg);
+}
+
+.laptop .lid .side.left {
+  background: #777;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.2em;
+  transform: translateX(-0.1em) translateZ(0.1em) rotateY(90deg);
+}
+
+.laptop .lid .side.front {
+  background: #aaa;
+  top: 0;
+  height: 0.2em;
+  left: 0;
+  right: 0;
+  transform: translateY(10.9em) translateZ(0.1em) rotateX(90deg);
+}
+
+.laptop .lid .side.back {
+  background: #aaa;
+  top: 0;
+  height: 0.2em;
+  left: 0;
+  right: 0;
+  transform: translateY(-0.1em) translateZ(0.1em) rotateX(90deg);
+}
+
+.laptop .screen {
+  position: absolute;
+  top: 0.7em;
+  bottom: 0.8em;
+  left: 0.2em;
+  right: 0.2em;
+  border-radius: 0.1em;
+  background: linear-gradient(to bottom right, #fff152, #ffa84a);
+  overflow: hidden;
+  border-top: 0.3em solid rgba(0, 0, 0, 0.2);
+}
+
+.laptop .screen:before,
+.laptop .screen:after {
+  content: "";
+  position: absolute;
+  transition: all 500ms 300ms;
+}
+
+.laptop .screen:after {
+  transition: top 500ms 300ms, bottom 500ms 300ms, left 500ms 300ms,
+    right 500ms 300ms, background-position 300ms;
+}
+
+.window:not(:hover) .laptop .screen:before,
+.window:not(:hover) .laptop .screen:after {
+  top: 100%;
+  bottom: 0;
+  left: 45%;
+  right: 45%;
+}
+
+.laptop .screen:before {
+  top: 1em;
+  bottom: 1em;
+  left: 3em;
+  right: 3em;
+  background: #333;
+  border-top: 0.5em solid #fff;
+}
+
+.laptop .screen:after {
+  top: 2em;
+  bottom: 2em;
+  left: 4em;
+  right: 6em;
+  background-image: linear-gradient(
+    180deg,
+    transparent 20%,
+    #1b3 20%,
+    #1b3 30%,
+    transparent 30%,
+    transparent 60%,
+    #ccc 60%,
+    #ccc 70%,
+    transparent 70%
+  );
+  background-size: 2em 2em;
+  background-position: center 0;
+}
+
+.laptop:active .screen:after {
+  background-position: center 2em;
+  transition: top 500ms 300ms, bottom 500ms 300ms;
+}

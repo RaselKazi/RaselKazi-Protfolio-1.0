@@ -1,0 +1,208 @@
+/*CLOCK*/
+
+#clock {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid #3e3f4b;
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  right: -50px;
+  top: -50px;
+  -webkit-box-shadow: inset 10px 10px 8px #a5d8db;
+  box-shadow: inset 10px 10px 8px #a5d8db;
+}
+
+#clockFace {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.clockMarker {
+  background-color: #a5d8db;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  margin-left: -1px;
+  top: 0;
+}
+
+#clockMarker126 {
+  background-color: #5fbabf;
+}
+
+#clockMarker17 {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+#clockMarker28 {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+#clockMarker39 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #5fbabf;
+}
+
+#clockMarker410 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+#clockMarker511 {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+#clockInner {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#clockDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #3e3f4b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -2.5px;
+}
+
+.hand,
+.hand.hour {
+  position: absolute;
+  width: 4px;
+  height: 30%;
+  top: 20%;
+  left: 50%;
+  margin-left: -2px;
+  background-color: #f47164;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-animation: spin 43200s infinite linear;
+  animation: spin 43200s infinite linear;
+}
+
+.hand.minute {
+  height: 45%;
+  top: 5%;
+  width: 3px;
+  margin-left: -1.5px;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-animation: spin 3600s infinite linear;
+  animation: spin 3600s infinite linear;
+}
+
+.hand.second {
+  height: 50%;
+  width: 2px;
+  margin-left: -1px;
+  top: 0;
+  background-color: #3e3f4b;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-animation: spin 60s infinite steps(60);
+  animation: spin 60s infinite steps(60);
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-minute {
+  100% {
+    -webkit-transform: rotate(410deg);
+    transform: rotate(410deg);
+  }
+}
+
+@keyframes spin-minute {
+  100% {
+    -webkit-transform: rotate(410deg);
+    transform: rotate(410deg);
+  }
+}
+
+@-webkit-keyframes spin-hour {
+  100% {
+    -webkit-transform: rotate(395deg);
+    transform: rotate(395deg);
+  }
+}
+
+@keyframes spin-hour {
+  100% {
+    -webkit-transform: rotate(395deg);
+    transform: rotate(395deg);
+  }
+}
+
+#clock:hover .hand.minute {
+  -webkit-animation: spin-minute 2s infinite linear;
+  animation: spin-minute 2s infinite linear;
+}
+
+#clock:hover .hand.hour {
+  -webkit-animation: spin-hour 4s infinite linear;
+  animation: spin-hour 4s infinite linear;
+}
+
+#clock:hover .hand.second {
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+/*END OF CLOCK*/

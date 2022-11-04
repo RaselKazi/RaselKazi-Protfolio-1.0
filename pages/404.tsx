@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Custom404() {
   return (
-    <div className=" h-screen w-screen bg-gray-900 flex items-center justify-center">
+    <div className=" h-screen w-screen bg-slate-900 flex items-center justify-center">
       <div className=" flex items-center justify-center">
         <div className="ml-4">
           <div className=" relative  overflow-hidden">

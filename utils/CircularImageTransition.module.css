@@ -1,0 +1,28 @@
+#preload {
+}
+
+.holder {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #ffffff46;
+  position: relative;
+  background-color: #ffffff46;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+#photoHolder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  transition: background-image 1s ease;
+  z-index: 33;
+}

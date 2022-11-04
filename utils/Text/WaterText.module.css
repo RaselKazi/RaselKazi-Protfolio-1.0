@@ -1,0 +1,71 @@
+
+
+.liquid {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.liquid h1 {
+  position: absolute;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.liquid h1:nth-child(1) {
+  color: #fff;
+  text-shadow: -1px 1px 0px #183954, -2px 2px 0px #183954, -3px 3px 0px #183954,
+    -5px 5px 0px #183954, -15px 15px 18px rgba(0, 0, 0, 0.5),
+    -15px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.liquid h1:nth-child(2) {
+  color: #2196f3;
+  animation: animate 3s ease-in-out infinite;
+}
+
+.liquid h1:nth-child(3) {
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 6s ease-in-out infinite;
+}
+
+.liquid h1:nth-child(4) {
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 45%,
+      13% 40%,
+      30% 42%,
+      44% 52%,
+      60% 63%,
+      78% 69%,
+      100% 66%,
+      100% 99%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 43%,
+      15% 53%,
+      28% 60%,
+      48% 61%,
+      63% 53%,
+      81% 48%,
+      100% 52%,
+      100% 99%,
+      0% 99%
+    );
+  }
+}

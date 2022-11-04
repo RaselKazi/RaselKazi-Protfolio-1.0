@@ -1,0 +1,324 @@
+#shelfArea2 {
+  position: absolute;
+  top: 24%;
+  right: 0%;
+  display: inline-block;
+  z-index: 1;
+}
+
+#shelf2 {
+  position: relative;
+  display: inline-block;
+  background-color: #f47164;
+  width: 200px;
+  height: 10px;
+}
+
+#shelf2Book1 {
+  position: relative;
+  background-color: #84a840;
+  width: 18px;
+  height: 70px;
+  margin-top: -70px;
+  margin-left: 80px;
+}
+
+#shelf2Book1Line1 {
+  position: absolute;
+  background-color: #fae7c7;
+  width: 18px;
+  height: 3px;
+  margin-top: 5px;
+}
+
+#shelf2Book1Line2 {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 4px;
+}
+
+#shelf2Book1Line3 {
+  position: absolute;
+  background-color: #fae7c7;
+  width: 8px;
+  height: 10px;
+  margin-top: 50px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+#shelf2Box {
+  position: relative;
+  background-color: #6686bf;
+  width: 45px;
+  height: 30px;
+  margin-top: -30px;
+  margin-left: 135px;
+  cursor: pointer;
+}
+
+#shelf2Box:before {
+  content: "";
+  position: absolute;
+  background-color: #d9edee;
+  width: 20px;
+  height: 8px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px #3e3f4b solid;
+  z-index: 100;
+}
+
+#shelf2Box:after {
+  content: "";
+  position: absolute;
+  background-color: #3e3f4b;
+  width: 49px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -2px;
+  z-index: 100;
+}
+
+#tapeDispenser {
+  position: relative;
+  margin-top: -31px;
+  margin-left: 40px;
+}
+
+#tapeBody {
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  background-color: #3f3f4b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 5px;
+}
+
+#tapeBody:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 15px;
+  background-color: #3f3f4b;
+  bottom: 0;
+  margin-left: -25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#tapeBody:after {
+  content: "";
+  position: absolute;
+  background-color: #a5d8db;
+  margin-top: 15px;
+  margin-left: -18px;
+  height: 5px;
+  width: 18px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#tapeLegs {
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  margin-top: 30px;
+  margin-left: -18px;
+  border-left: 5px solid #3f3f4b;
+  border-right: 5px solid #3f3f4b;
+}
+
+#tapeHole {
+  z-index: 100;
+  position: absolute;
+  background-color: #a5d8db;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  margin-left: 9px;
+  border-radius: 50%;
+}
+
+#tapeRoll {
+  position: absolute;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-left: -2.5px;
+}
+
+#tapeRoll:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  height: 1px;
+  -webkit-transform: translate(-25px, 13px) rotate(-10deg);
+  -ms-transform: translate(-25px, 13px) rotate(-10deg);
+  transform: translate(-25px, 13px) rotate(-10deg);
+  -webkit-transform-origin: 100%;
+  -ms-transform-origin: 100%;
+  transform-origin: 100%;
+}
+
+#shelf2Book2 {
+  position: relative;
+  background-color: #eabbae;
+  width: 10px;
+  height: 60px;
+  margin-top: -61px;
+  margin-left: 115px;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+#shelf2Book1:hover {
+  -webkit-animation: shelf-book-raise 0.8s ease-in forwards;
+  animation: shelf-book-raise 0.8s ease-in forwards;
+  cursor: pointer;
+}
+
+#shelf2Book2:hover {
+  -webkit-animation: shelf-book-shift-1 0.8s alternate infinite;
+  animation: shelf-book-shift-1 0.8s alternate infinite;
+  cursor: pointer;
+}
+
+#shelf2Box:hover:after {
+  -webkit-animation: box-lid 2s ease forwards;
+  animation: box-lid 2s ease forwards;
+  cursor: pointer;
+}
+
+@-webkit-keyframes box-lid {
+  40% {
+    -webkit-transform: translate(25px, -18px) rotate(70deg);
+    transform: translate(25px, -18px) rotate(70deg);
+  }
+  60% {
+    -webkit-transform: translate(25px, -18px) rotate(70deg);
+    transform: translate(25px, -18px) rotate(70deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes box-lid {
+  40% {
+    -webkit-transform: translate(25px, -18px) rotate(70deg);
+    transform: translate(25px, -18px) rotate(70deg);
+  }
+  60% {
+    -webkit-transform: translate(25px, -18px) rotate(70deg);
+    transform: translate(25px, -18px) rotate(70deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+#boxHeart {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  margin-left: -28px;
+  z-index: -1;
+}
+
+#boxHeart:before,
+#boxHeart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 12px;
+  height: 18px;
+  background: #f47164;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  z-index: 100;
+}
+
+#boxHeart:after {
+  margin-left: 38px;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+#shelf2Box:hover #boxHeart {
+  -webkit-animation: pop 2s ease forwards;
+  animation: pop 2s ease forwards;
+}
+
+@-webkit-keyframes pop {
+  100% {
+    -webkit-transform: translateY(-50px) rotate(-20deg);
+    transform: translateY(-50px) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pop {
+  100% {
+    -webkit-transform: translateY(-50px) rotate(-20deg);
+    transform: translateY(-50px) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+#tapeDispenser:hover {
+  -webkit-transform-origin: 100%;
+  -ms-transform-origin: 100%;
+  transform-origin: 100%;
+  -webkit-animation: tape 0.5s ease forwards;
+  animation: tape 0.5s ease forwards;
+  cursor: pointer;
+}
+
+@-webkit-keyframes tape {
+  20% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes tape {
+  20% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/*END OF SHELF 2*/

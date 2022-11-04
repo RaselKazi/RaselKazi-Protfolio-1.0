@@ -1,0 +1,118 @@
+.wall .frame1 {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 60px;
+  top: 40%;
+  right: 8%;
+  z-index: 10;
+  background: transparent;
+  overflow: hidden;
+  box-shadow: 0 0 3px 5px var(--frameColor), 0 0 0 10px var(--frameColor1),
+    0 0 0 14px var(--frameColor2);
+}
+.wall .frame1 .reflection {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 60px;
+  bottom: 0%;
+  left: 20%;
+  z-index: 150;
+  background: #e1ddcc51;
+  filter: blur(7px);
+  transform: skew(45deg);
+  box-shadow: 40px 0 0 10px #e1ddcc51;
+}
+.wall {
+  transition: 0.5s;
+}
+.wall:hover {
+  cursor: pointer;
+}
+
+.wall .frame1:hover img,
+.wall .frame2:hover img,
+.wall .frame3:hover img {
+  transform: scale(1.5);
+}
+.wall .frame1 img,
+.wall .frame2 img,
+.wall .frame3 img {
+  transition: 0.5s;
+}
+.wall .frame1:after,
+.wall .frame2:after,
+.wall .frame3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 140%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skew(45deg);
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+.wall .frame1:hover:after,
+.wall .frame2:hover:after,
+.wall .frame3:hover:after {
+  left: 100%;
+}
+.wall .frame2 {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 30px;
+  bottom: 28%;
+  right: 11%;
+  z-index: 5;
+  background: transparent;
+  overflow: hidden;
+  box-shadow: 0 0 3px 5px var(--frameColor), 0 0 0 10px var(--frameColor1),
+    0 0 0 14px var(--frameColor2);
+}
+.wall .frame2 .reflection {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 60px;
+  bottom: 0%;
+  left: -5%;
+  z-index: 150;
+  background: #fbe07f;
+  transform: skew(45deg);
+  box-shadow: 25px 0 0 6px #fbe07f;
+}
+
+.wall .frame3 {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 15px;
+  bottom: 34%;
+  left: 35%;
+  z-index: 5;
+  background: transparent;
+  overflow: hidden;
+  box-shadow: 0 0 3px 5px var(--frameColor), 0 0 0 10px var(--frameColor1),
+    0 0 0 14px var(--frameColor2);
+}
+.wall .frame3 .reflection {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 60px;
+  bottom: 0%;
+  left: 75%;
+  z-index: 150;
+  background: #fbe07f;
+  transform: skew(-45deg);
+  box-shadow: -25px 0 0 6px #fbe07f;
+}

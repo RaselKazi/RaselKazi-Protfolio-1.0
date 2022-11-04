@@ -45,7 +45,7 @@ export default function ContactForm() {
             </label>
 
             <input
-              className="w-full px-4 py-2 text-gray-300 bg-gray-800 border border-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-2 text-gray-300 bg-slate-800 border border-gray-600 rounded-md dark:bg-slate-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
               type="text"
               placeholder="Name"
               {...register("name", { required: true, maxLength: 50 })}
@@ -60,7 +60,7 @@ export default function ContactForm() {
               E-mail
             </label>
             <input
-              className=" w-full px-4 py-2 text-gray-300 bg-gray-800 border border-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
+              className=" w-full px-4 py-2 text-gray-300 bg-slate-800 border border-gray-600 rounded-md dark:bg-slate-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
               type="email"
               placeholder="Email"
               {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
@@ -77,7 +77,7 @@ export default function ContactForm() {
             </label>
 
             <textarea
-              className="w-full px-4 py-2 text-gray-300 bg-gray-800 border border-gray-600 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
+              className="w-full px-4 py-2 text-gray-300 bg-slate-800 border border-gray-600 rounded-md dark:bg-slate-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none"
               {...register("message", { required: true, max: 300 })}
             ></textarea>
             <p className="my-2 text-xs italic text-red-500">

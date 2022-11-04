@@ -1,0 +1,170 @@
+.window {
+  height: 20em;
+  width: 20em;
+  position: relative;
+  perspective: 75em;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.envelope {
+  height: 11em;
+  width: 15em;
+  background: #e7e7e7;
+  position: absolute;
+  left: 2.5em;
+  top: 4.5em;
+  transition: all 1000ms;
+  transform: rotateY(40deg) rotateX(55deg);
+  transform-style: preserve-3d;
+}
+
+.envelope + .shadow {
+  position: absolute;
+  z-index: -1;
+  height: 11em;
+  width: 15em;
+  left: 2.5em;
+  top: 4.5em;
+  background: #000f;
+  opacity: 0.05;
+  transform: translateY(6em) rotateX(90deg) rotateZ(-40deg);
+  filter: blur(2em);
+  transition: all 1000ms;
+}
+
+.window:hover .envelope + .shadow {
+  transform: translateY(13em) rotateX(90deg) rotateZ(30deg);
+  height: 1em;
+  filter: blur(0.5em);
+  opacity: 0.07;
+}
+
+.envelope:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 6.5em 7.5em 4.5em;
+  border-color: #f0f0f0;
+  border-top-color: transparent;
+}
+
+.letter {
+  position: absolute;
+  left: 2em;
+  right: 2em;
+  top: 0.5em;
+  height: 10em;
+  background: linear-gradient(to bottom right, #fff152, #ffa84a);
+  color: #333;
+  text-align: center;
+  padding: 0 0;
+  font-family: sans;
+  transition: all 300ms;
+  opacity: 0.99;
+}
+
+.letter:after {
+  content: "";
+  transition: all 300ms, opacity 200ms 500ms;
+  position: absolute;
+  top: 1.5em;
+  bottom: 1.5em;
+  left: 1.5em;
+  right: 1.5em;
+  background-image: linear-gradient(
+    180deg,
+    #3337 10%,
+    transparent 10%,
+    transparent 30%,
+    #333a 30%,
+    #333a 40%,
+    transparent 40%,
+    transparent 60%,
+    #3336 60%,
+    #3336 70%,
+    transparent 70%
+  );
+  background-size: 2.5em 2.5em;
+  background-position: center 0;
+  opacity: 0;
+}
+
+.window:hover .letter {
+  top: -2.5em;
+  transition: top 400ms 300ms, box-shadow 700ms;
+  box-shadow: 0 1em 1em #0005;
+}
+
+.window:hover .letter:after {
+  opacity: 1;
+  transition: all 300ms;
+}
+
+.envelope:active .letter:after {
+  background-position: center 2.5em;
+  transition: none;
+}
+
+.envelope .lid {
+  position: absolute;
+  top: 0;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.envelope .lid:before,
+.envelope .lid:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 8em 7.5em 0;
+  transition: transform 500ms 200ms, filter 500ms 200ms,
+    border-top-color 500ms 200ms, z-index 300ms step-end,
+    border-top-width 500ms 200ms;
+}
+
+.window:hover .envelope .lid:before,
+.window:hover .envelope .lid:after {
+  transition: all 400ms;
+}
+
+.window:hover .envelope .lid:after {
+  z-index: -1;
+}
+
+.envelope .lid:before {
+  top: 0.4em;
+  border-top-color: #0004;
+  filter: blur(0.2em);
+}
+
+.envelope .lid:after {
+  transform-origin: top;
+  border-top-color: #f0f0f0;
+  transform: rotateX(10deg);
+}
+
+.window:hover .envelope {
+  transform: rotateY(-30deg);
+  top: 6.5em;
+}
+
+.window:hover .envelope .lid:before {
+  border-top-color: #0000;
+  filter: blur(0.2em);
+  border-top-width: 0em;
+}
+
+.window:hover .envelope .lid:after {
+  transform: rotateX(180deg);
+}

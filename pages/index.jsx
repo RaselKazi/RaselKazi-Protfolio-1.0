@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import About from "../components/About";
 import Blog from "../components/Blog";
 import Certificate from "../components/Certificate";
@@ -6,31 +5,27 @@ import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Portfolio from "../components/Portfolio";
-import WhatDo from "../components/WhatDo";
+import Ball from "../components/Ball";
+import SkillSectionBuilding from "../components/SkillSectionBuilding";
+import SkillSection from "../components/SkillSection";
+import WhatDo3d from "../components/WhatDo3d";
 import Loading from "../components/Loading";
+import BlurryLoading from "../components/BlurryLoading";
 import ScrollToTop from "../components/ScrollToTop";
+import CircularImageTransition from "../utils/CircularImageTransition";
 import { useEffect, useState } from "react";
 
-const Home: NextPage = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const lod = () => setLoading(false);
-    const interval = setTimeout(() => {
-      lod();
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-  if (loading) {
-    return <Loading />;
-  }
+const Home = () => {
   return (
     <Layout>
+      {/* <BlurryLoading></BlurryLoading> */}
       <Hero />
-      <WhatDo></WhatDo>
+      <WhatDo3d></WhatDo3d>
       <About></About>
       <Portfolio></Portfolio>
-      {/* <Blog></Blog> */}
+      <SkillSectionBuilding></SkillSectionBuilding>
+      {/*<SkillSection></SkillSection>
+      <Blog></Blog> */}
       <Certificate></Certificate>
       <Contact></Contact>
       <ScrollToTop></ScrollToTop>

@@ -1,0 +1,322 @@
+
+ 
+
+    .scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+    .one,
+    .two,
+    .three,
+    .circle,
+    .p404 {
+    width: 60%;
+    height: 60%;
+    top: 20% !important;
+    left: 20% !important;
+    min-width: 400px;
+    min-height: 400px;
+  }
+    .one .content,
+    .two .content,
+    .three .content,
+    .circle .content,
+    .p404 .content {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
+  }
+  @keyframes content {
+    0% {
+      width: 0;
+    }
+  }
+    .one .content .piece,
+    .two .content .piece,
+    .three .content .piece,
+    .circle .content .piece,
+    .p404 .content .piece {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    border-radius: 80px;
+    z-index: 1;
+    animation: pieceLeft 8s cubic-bezier(1, 0.06, 0.25, 1) infinite both;
+  }
+  @keyframes pieceLeft {
+    50% {
+      left: 80%;
+      width: 10%;
+    }
+  }
+  @keyframes pieceRight {
+    50% {
+      right: 80%;
+      width: 10%;
+    }
+  }
+  @media screen and (max-width: 799px) {
+      .one,
+    .two,
+    .three,
+    .circle,
+    .p404 {
+      width: 90%;
+      height: 90%;
+      top: 5% !important;
+      left: 5% !important;
+      min-width: 280px;
+      min-height: 280px;
+    }
+  }
+  @media screen and (max-height: 660px) {
+      .one,
+    .two,
+    .three,
+    .circle,
+    .p404 {
+      min-width: 280px;
+      min-height: 280px;
+      width: 60%;
+      height: 60%;
+      top: 20% !important;
+      left: 20% !important;
+    }
+  }
+  
+  @keyframes text {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+  @media screen and (max-width: 799px) {
+      .text {
+      min-height: 400px;
+      height: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 799px) {
+      .text article {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 799px) {
+      .p404 {
+      font-size: 100px;
+    }
+  }
+  @keyframes anime404 {
+    0% {
+      opacity: 0;
+      transform: scale(10) skew(20deg, 20deg);
+    }
+  }
+    .p404:nth-of-type(2) {
+    color: #36184F;
+    z-index: 1;
+    animation-delay: 1s;
+    filter: blur(10px);
+    opacity: 0.8;
+  }
+  
+ 
+  @media screen and (max-width: 799px) {
+      .circle:before {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 799px) {
+      .one .content:before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+    .one .content .piece {
+    background: linear-gradient(90deg, #8077EA 13.7%, #EB73FF 94.65%);
+  }
+    .one .content .piece:nth-child(1) {
+    right: 15%;
+    top: 18%;
+    height: 30px;
+    width: 120px;
+    animation-delay: 0.5s;
+    animation-name: pieceRight;
+  }
+    .one .content .piece:nth-child(2) {
+    left: 15%;
+    top: 45%;
+    width: 150px;
+    height: 50px;
+    animation-delay: 1s;
+    animation-name: pieceLeft;
+  }
+    .one .content .piece:nth-child(3) {
+    left: 10%;
+    top: 75%;
+    height: 20px;
+    width: 70px;
+    animation-delay: 1.5s;
+    animation-name: pieceLeft;
+  }
+    .two .content .piece {
+    background: linear-gradient(90deg, #FFEDC0 0%, #FF9D87 100%);
+  }
+    .two .content .piece:nth-child(1) {
+    left: 0%;
+    top: 25%;
+    height: 40px;
+    width: 120px;
+    animation-delay: 2s;
+    animation-name: pieceLeft;
+  }
+    .two .content .piece:nth-child(2) {
+    right: 15%;
+    top: 35%;
+    width: 180px;
+    height: 50px;
+    animation-delay: 2.5s;
+    animation-name: pieceRight;
+  }
+    .two .content .piece:nth-child(3) {
+    right: 10%;
+    top: 80%;
+    height: 20px;
+    width: 160px;
+    animation-delay: 3s;
+    animation-name: pieceRight;
+  }
+    .three .content .piece {
+    background: #FB8A8A;
+  }
+    .three .content .piece:nth-child(1) {
+    left: 25%;
+    top: 35%;
+    height: 20px;
+    width: 80px;
+    animation-name: pieceLeft;
+    animation-delay: 3.5s;
+  }
+    .three .content .piece:nth-child(2) {
+    right: 10%;
+    top: 55%;
+    width: 140px;
+    height: 40px;
+    animation-name: pieceRight;
+    animation-delay: 4s;
+  }
+    .three .content .piece:nth-child(3) {
+    left: 40%;
+    top: 68%;
+    height: 20px;
+    width: 80px;
+    animation-name: pieceLeft;
+    animation-delay: 4.5s;
+  }
+  
+    .one .content .piece:hover,
+    .two .content .piece:hover,
+    .three .content .piece:hover { 
+      filter: blur(10px);
+      opacity: 0.8;
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  /* background circle glow */
+  
+  
+  @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+  
+    @keyframes pulse {
+      from,
+      20%,
+      40%,
+      80%,
+      to {
+        transform: scale(1);
+      }
+    
+      10%,
+      60% {
+        transform: scale(1.1);
+      }
+    }
+  #background {
+      top: -8%;
+      left: -3%;
+      place-items: center;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.3;
+    }
+    
+    #circle2 {
+      animation: rotate 10s linear infinite;
+      background: conic-gradient(
+          rgb(204, 100, 223),
+          rgb(119, 188, 236),
+        rgb(32, 18, 95),
+        rgb(204, 100, 223)
+      );
+      border-radius: 30vh;
+      display: grid;
+      filter: blur(3vh);
+      height: 40vh;
+      place-items: center;
+      position: relative;
+      width: 40vh;
+    }
+    
+    #circleInner {
+      border-radius: inherit;
+      inset: 5%;
+      position: absolute;
+    }
+    
+    #circleGlow {
+      animation: pulse 10s ease-in-out infinite;
+      background: conic-gradient(
+          rgb(204, 100, 223),
+          rgb(119, 188, 236),
+        rgb(32, 18, 95),
+        rgb(204, 100, 223)
+      );
+      border-radius: 100vh;
+      filter: blur(3vh);
+      height: 110%;
+      opacity: 0.15;
+      width: 110%;
+      z-index: 2;
+    }
+    
+    #circleInner {
+      background: linear-gradient(
+        to right,
+        rgb(29, 33, 68),
+        rgb(30, 25, 47)
+      );
+      z-index: 3;
+    }

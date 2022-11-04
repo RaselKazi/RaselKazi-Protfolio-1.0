@@ -1,4 +1,5 @@
 import React from "react";
+import SkillItem from "../utils/SkillItem";
 
 export default function skillList() {
   const icon = [
@@ -36,17 +37,19 @@ export default function skillList() {
       <div className="flex flex-row flex-wrap items-center font-semibold transition-colors duration-200 mb-4">
         {icon.map((item) => {
           return (
-            <div key={item.link} className=" relative">
-              <img
-                className="transition duration-200  
-              p-[0.24rem] md:p-1  h-8  w-8 md:h-11  md:w-11 m-0.5 md:m-1 cursor-pointer p-3 rounded-md bg-gray-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
-                src={`/icon/${item.link}.svg`}
-                alt=""
-              />
-              <div
-                className={`absolute h-3 w-3 md:h-5 md:w-5  -bottom-1 left-3 blur bg-${item.color}-500/80`}
-              ></div>
-            </div>
+
+            <SkillItem key={item.link} link={item.link}></SkillItem>
+            // <div key={item.link} className=" relative">
+            //   <img
+            //     className="transition duration-200  
+            //   p-[0.24rem] md:p-1  h-8  w-8 md:h-11  md:w-11 m-0.5 md:m-1 cursor-pointer p-3 rounded-md bg-slate-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
+            //     src={`/icon/${item.link}.svg`}
+            //     alt=""
+            //   />
+            //   <div
+            //     className={`absolute h-3 w-3 md:h-5 md:w-5  -bottom-1 left-3 blur bg-${item.color}-500/80`}
+            //   ></div>
+            // </div>
           );
         })}
       </div>

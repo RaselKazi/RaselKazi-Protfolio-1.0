@@ -1,0 +1,19 @@
+#laptop {
+  height: 40px;
+  width: 10px;
+
+  background: #000;
+}
+
+#envelope {
+  height: 40px;
+}
+
+#laptopHo:hover + #laptop {
+  display: block;
+  margin: 70px;
+}
+#envelopeHo:hover + #envelope {
+  display: block;
+  margin: 70px;
+}

@@ -7,10 +7,36 @@
 html {
   scroll-behavior: smooth;
 }
+*,
+::before,
+::after {
+  box-sizing: content-box !important;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 
+*:before,
+*:after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --frameColor: #76778d;
+  --frameColor1: #3e3f4b;
+  --frameColor2: #202125;
+  --skyscraper: #334155;
+}
 
 .swiper-pagination-horizontal {
-  
   bottom: -4% !important;
 }
 
@@ -75,20 +101,13 @@ html {
   background: transparent;
 }
 
-
 .Certificate-section {
-  background-image: url('../public/image/bg-01.jpg');
-  padding: 80px 0 80px;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  z-index: 1;
 }
 
 .skill-item {
   transform: translateX(100%);
   opacity: 0;
-  animation:slideInRight forwards;
+  animation: slideInRight forwards;
 }
 
 @keyframes slideInRight {

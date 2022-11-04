@@ -6,14 +6,14 @@ export default function BlogItem() {
     return (
       <div
         key={item.Calgary}
-        className="overflow-hidden transition duration-300 transform lg:hover:-translate-y-2 bg-gray-500/10 dark:bg-gray-500/10 rounded-xl shadow-lg hover:shadow-2xl p-2 backdrop-blur-2xl border border-sky-500/30"
+        className="overflow-hidden transition duration-300 transform lg:hover:-translate-y-2 bg-slate-500/10 dark:bg-slate-500/10 rounded-xl shadow-lg hover:shadow-2xl p-2 backdrop-blur-2xl border border-sky-500/30"
       >
         <img
           src={item.ing}
           className="object-cover w-full h-64 rounded-t-md p-2"
           alt=""
         />
-        <div className="p-5 border-gray-800 dark:border-gray-800 rounded-b-lg border-t-0">
+        <div className="p-5 border-slate-800 dark:border-slate-800 rounded-b-lg border-t-0">
           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
             <a
               target="_blank"

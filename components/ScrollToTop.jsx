@@ -32,9 +32,8 @@ function ScrollToTop() {
       {isVisible && (
         <div className="relative">
           <div
-            className=" fixed bottom-6 right-6 rounded-full p-3 h-12 w-12  z-50 bg-gray-500/20 text-2xl font-bold text-sky-500/80 backdrop-blur hover:translate-y-2 cursor-pointer transition duration-200 border border-sky-500/40"
-            onClick={scrollTop}
-          >
+            className=" fixed  flex justify-center items-center bottom-6 right-6 rounded-full h-10 w-10  z-50 bg-slate-500/20 text-3xl text-center font-bold text-sky-500/80 backdrop-blur hover:translate-y-2 cursor-pointer transition duration-200 border border-sky-500/40"
+            onClick={scrollTop}>
             <BiUpArrow />
             <div className=" top-1/2 left-3  absolute bg-sky-400/80 h-6 w-6 rounded-full blur"></div>
           </div>

@@ -1,0 +1,68 @@
+#sliderk {
+  background: var(--frameColor1);
+  width: 90%;
+  height: 180px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 10px rgba(2, 34, 42, 0.2);
+  z-index: 10;
+}
+#sliderk .framek {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 45px 5px;
+  width: 24.5%;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--frameColor1);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+  transform: skewX(-20deg);
+  transition: width 0.5s ease-in-out;
+}
+/* #sliderk .framek::before {
+  position: absolute;
+  content: "r";
+  color: red;
+  font-size: 6.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: blue;
+  display: block;
+}
+#sliderk:hover div + #sliderk .framek::before {
+  display: block;
+}
+
+#sliderk:hover div:hover + #sliderk .framek::before {
+  display: none;
+} */
+#sliderk:hover div {
+  width: 15%;
+}
+#sliderk:hover div:hover {
+  width: 45%;
+  cursor: pointer;
+}
+
+.framek img {
+  transform: skewX(20deg);
+}
+
+#sliderk > div:first-child {
+  padding-left: 25px;
+  margin-left: -50px;
+}
+#sliderk > div:last-child {
+  padding-right: 20px;
+  margin-right: -60px;
+}

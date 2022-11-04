@@ -12,8 +12,8 @@ import SocialLink from "./SocialLink";
 export default function Footer() {
   const [element, controls] = useScroll();
   return (
-    <div ref={element} className="relative bg-gray-900 overflow-hidden">
-      <div className="border-t border-sky-500/30 bg-gray-500/5 text-sky-500/80 z-10 backdrop-blur">
+    <div ref={element} className="relative bg-slate-900 overflow-hidden">
+      <div className="border-t border-sky-500/30 bg-slate-500/5 text-sky-500/80 z-10 backdrop-blur">
         <div className=" absolute top-1/4 left-1/3 rounded-full h-20 w-20 blur bg-gradient-to-r from-gray-900/40  to-gray-700 "></div>
         {/* <div className=" absolute -bottom-20 right-1/4 rounded-full h-52 w-52 blur bg-gradient-to-r from-gray-900/40  to-sky-700/40 "></div> */}
         <div className="px-4 pt-16 mx-auto  md:px-24 lg:px-8">
@@ -32,7 +32,7 @@ export default function Footer() {
             >
               <div className=" relative">
                 <div className=" top-1/2 left-4  absolute bg-sky-400/80 h-7 w-7 rounded-full blur"></div>
-                <div className="flex items-center justify-center text-4xl font-bold w-14 h-14 rounded-md border-sky-600/40 border-2 border-b-0   bg-gray-500/10 text-sky-500 z-10 backdrop-blur ">
+                <div className="flex items-center justify-center text-4xl font-bold w-14 h-14 rounded-md border-sky-600/40 border-2 border-b-0   bg-slate-500/10 text-sky-500 z-10 backdrop-blur ">
                   R
                 </div>
                 

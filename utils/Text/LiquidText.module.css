@@ -1,0 +1,49 @@
+
+  .content {
+	position: relative;
+  }
+  
+  .content h1 {
+	position: absolute;
+    
+	font-size: 2rem;
+    white-space: nowrap;
+	transform: translate(-50%, -50%);
+  }
+  
+  .content h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 1px #006d77;
+  }
+  
+  .content h1:nth-child(2) {
+	color: #006d77;
+	animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+	0%,
+	100% {
+	  clip-path: polygon(
+		0 43%,
+		25% 55%,
+		48% 66%,
+		67% 68%,
+		100% 64%,
+		100% 100%,
+		0% 100%
+	  );
+	}
+	50% {
+	  clip-path: polygon(
+		0 70%,
+		24% 69%,
+		51% 57%,
+		74% 55%,
+		100% 58%,
+		100% 100%,
+		0% 100%
+	  );
+	}
+  }
+  

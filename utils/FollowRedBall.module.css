@@ -1,0 +1,355 @@
+
+
+.cups {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+  }
+  
+  .cup {
+    position: absolute;
+    top: 25px;
+    width: 60px;
+    height: 120px;
+    transform: translateX(-50%);
+    transform-origin: center -100%;
+  }
+  .cup:nth-child(1) {
+    -webkit-animation: cupA 8s infinite ease-in-out;
+            animation: cupA 8s infinite ease-in-out;
+  }
+  .cup:nth-child(1) .shadow {
+    -webkit-animation: shadow 8s infinite ease-in-out;
+            animation: shadow 8s infinite ease-in-out;
+  }
+  .cup:nth-child(1) .ballShadow {
+    -webkit-animation: ball 32s -24s infinite ease-in-out;
+            animation: ball 32s -24s infinite ease-in-out;
+  }
+  .cup:nth-child(1) .ball {
+    -webkit-animation: ball 32s -24s infinite ease-in-out;
+            animation: ball 32s -24s infinite ease-in-out;
+  }
+  .cup:nth-child(1) .tin {
+    -webkit-animation: tin 8s infinite ease-in-out;
+            animation: tin 8s infinite ease-in-out;
+  }
+  .cup:nth-child(2) {
+    -webkit-animation: cupB 8s infinite ease-in-out;
+            animation: cupB 8s infinite ease-in-out;
+  }
+  .cup:nth-child(2) .shadow {
+    -webkit-animation: shadow 8s 0.4s infinite ease-in-out;
+            animation: shadow 8s 0.4s infinite ease-in-out;
+  }
+  .cup:nth-child(2) .ballShadow {
+    -webkit-animation: ball-mid 16s infinite ease-in-out;
+            animation: ball-mid 16s infinite ease-in-out;
+  }
+  .cup:nth-child(2) .ball {
+    -webkit-animation: ball-mid 16s infinite ease-in-out;
+            animation: ball-mid 16s infinite ease-in-out;
+  }
+  .cup:nth-child(2) .tin {
+    -webkit-animation: tin 8s 0.4s infinite ease-in-out;
+            animation: tin 8s 0.4s infinite ease-in-out;
+  }
+  .cup:nth-child(3) {
+    -webkit-animation: cupC 8s infinite ease-in-out;
+            animation: cupC 8s infinite ease-in-out;
+  }
+  .cup:nth-child(3) .shadow {
+    -webkit-animation: shadow 8s 0.8s infinite ease-in-out;
+            animation: shadow 8s 0.8s infinite ease-in-out;
+  }
+  .cup:nth-child(3) .ballShadow {
+    -webkit-animation: ball 32s -8s infinite ease-in-out;
+            animation: ball 32s -8s infinite ease-in-out;
+  }
+  .cup:nth-child(3) .ball {
+    -webkit-animation: ball 32s -8s infinite ease-in-out;
+            animation: ball 32s -8s infinite ease-in-out;
+  }
+  .cup:nth-child(3) .tin {
+    -webkit-animation: tin 8s 0.8s infinite ease-in-out;
+            animation: tin 8s 0.8s infinite ease-in-out;
+  }
+  @-webkit-keyframes cupA {
+    0%, 45%, 80% {
+      left: 0;
+    }
+    55%, 90% {
+      left: 50%;
+    }
+    65%, 100% {
+      left: 100%;
+    }
+    60%, 85% {
+      transform: translateX(-50%) scale(0.909);
+      z-index: 0;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+    50%, 95% {
+      transform: translateX(-50%) scale(1.1);
+      z-index: 10;
+    }
+    72.5% {
+      transform: translateX(-50%) scale(1.21);
+      z-index: 10;
+    }
+  }
+  @keyframes cupA {
+    0%, 45%, 80% {
+      left: 0;
+    }
+    55%, 90% {
+      left: 50%;
+    }
+    65%, 100% {
+      left: 100%;
+    }
+    60%, 85% {
+      transform: translateX(-50%) scale(0.909);
+      z-index: 0;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+    50%, 95% {
+      transform: translateX(-50%) scale(1.1);
+      z-index: 10;
+    }
+    72.5% {
+      transform: translateX(-50%) scale(1.21);
+      z-index: 10;
+    }
+  }
+  @-webkit-keyframes cupB {
+    55%, 65% {
+      left: 0%;
+    }
+    0%, 45%, 100% {
+      left: 50%;
+    }
+    80%, 90% {
+      left: 100%;
+    }
+    72.5% {
+      transform: translateX(-50%) scale(0.826);
+      z-index: 0;
+    }
+    50%, 95% {
+      transform: translateX(-50%) scale(0.909);
+      z-index: 0;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+  }
+  @keyframes cupB {
+    55%, 65% {
+      left: 0%;
+    }
+    0%, 45%, 100% {
+      left: 50%;
+    }
+    80%, 90% {
+      left: 100%;
+    }
+    72.5% {
+      transform: translateX(-50%) scale(0.826);
+      z-index: 0;
+    }
+    50%, 95% {
+      transform: translateX(-50%) scale(0.909);
+      z-index: 0;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+  }
+  @-webkit-keyframes cupC {
+    90%, 100% {
+      left: 0;
+    }
+    65%, 80% {
+      left: 50%;
+    }
+    0%, 45%, 55% {
+      left: 100%;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+    60%, 85% {
+      transform: translateX(-50%) scale(1.1);
+      z-index: 10;
+    }
+  }
+  @keyframes cupC {
+    90%, 100% {
+      left: 0;
+    }
+    65%, 80% {
+      left: 50%;
+    }
+    0%, 45%, 55% {
+      left: 100%;
+    }
+    0%, 45%, 55%, 65%, 80%, 90%, 100% {
+      transform: translateX(-50%) scale(1);
+      z-index: 5;
+    }
+    60%, 85% {
+      transform: translateX(-50%) scale(1.1);
+      z-index: 10;
+    }
+  }
+  
+  .shadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74px;
+    height: 47px;
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 0 0px 10px #777;
+  }
+  
+  .ball {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 60% 20%, #a33, #422);
+  }
+  .ballShadow {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #777;
+    z-index: -3;
+    filter: blur(5px);
+  }
+  
+  .tin {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    perspective: 400px;
+    perspective-origin: center -50%;
+  }
+  .tin::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image:  linear-gradient(to left, #94a3b8, #f9fafb, #94a3b8, #475569);
+    transform: rotateX(48.5deg);
+    transform-origin: top;
+    border-radius: 0 0 50% 50%/0 0 20px 20px;
+  }
+  .tin::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg);
+    width: 100%;
+    height: 15%;
+    border-radius: 50%;
+    background-image: radial-gradient(#aaa, #777);
+    border: 1px solid #777;
+    z-index: 2;
+  }
+  
+  @-webkit-keyframes tin {
+    0%, 5%, 30%, 100% {
+      top: 0;
+    }
+    15%, 20% {
+      top: -50px;
+    }
+  }
+  
+  @keyframes tin {
+    0%, 5%, 30%, 100% {
+      top: 0;
+    }
+    15%, 20% {
+      top: -50px;
+    }
+  }
+  @-webkit-keyframes shadow {
+    0%, 5%, 30%, 100% {
+      bottom: 0;
+      box-shadow: 0 0px 10px #777;
+    }
+    15%, 20% {
+      bottom: 50px;
+      box-shadow: 0 50px 60px #777;
+    }
+  }
+  @keyframes shadow {
+    0%, 5%, 30%, 100% {
+      bottom: 0;
+      box-shadow: 0 0px 10px #777;
+    }
+    15%, 20% {
+      bottom: 50px;
+      box-shadow: 0 50px 60px #777;
+    }
+  }
+  @-webkit-keyframes ball {
+    0%, 15% {
+      opacity: 1;
+    }
+    15.1%, 100% {
+      opacity: 0;
+    }
+  }
+  @keyframes ball {
+    0%, 15% {
+      opacity: 1;
+    }
+    15.1%, 100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes ball-mid {
+    0%, 30% {
+      opacity: 1;
+    }
+    30.1%, 100% {
+      opacity: 0;
+    }
+  }
+  @keyframes ball-mid {
+    0%, 30% {
+      opacity: 1;
+    }
+    30.1%, 100% {
+      opacity: 0;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+
+.btn {
+  
+  color: #fff;
+  font-family: inherit;
+  background-color: #d8d8d811;
+  padding: 0.6rem 0.9rem;
+  border: solid 1px darken(#d8d8d86e, 7.5%);;
+  outline: none;
+  position: relative;
+  border-radius: 0.5rem;
+  user-select: none;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4), 0 -0.3rem 0.6rem rgba(0, 0, 0, 0.2) inset;
+  transition: box-shadow 64ms ease-out;
+}
+.btn:before {
+    content: "";
+    width: 75%;
+    height: 12%;
+    position: absolute;
+    bottom: 0.50rem;
+    left: 12.5%;
+    border-radius: 20%;
+    transition: opacity 64ms ease-out;
+    background: #0f0;
+    animation: animate 2s linear infinite;
+  }
+.btn:after {
+  content: "";
+  background-color: #ffffff95;
+  width: 75%;
+  height: 12.5%;
+  position: absolute;
+  top: 0.15rem;
+  left: 12.5%;
+  border-radius: 50%;
+  filter: blur(0.15rem);
+  transition: opacity 64ms ease-out;
+}
+.btn:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4), 0 0.4rem 1rem rgba(0, 0, 0, 0.3) inset;
+}
+.btn:active:after {
+  opacity: 0.5;
+}
+
+@keyframes animate {
+    0% {
+      filter: hue-rotate(0deg) blur(0.80rem);
+    }
+    100% {
+      filter: hue-rotate(360deg) blur(0.70rem);
+    }
+  }

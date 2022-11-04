@@ -1,0 +1,99 @@
+/*--------------------
+Wrapper
+--------------------*/
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 600px;
+  font-family: "Source Sans Pro", sans-serif;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%) perspective(600px) rotateY(20deg)
+    rotateX(20deg);
+  cursor: pointer;
+}
+
+.card {
+  transform: translate(10%, 10%);
+}
+
+/*--------------------
+  Me
+  --------------------*/
+.me {
+  position: relative;
+  width: 370px;
+  height: 500px;
+  transform: translateZ(80px) scale(0.8);
+}
+.me::before,
+.me::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: url("../public/image/profile33.png") no-repeat 0 0;
+}
+.me::after {
+  height: 30px;
+  top: auto;
+  bottom: -5px;
+  z-index: -1;
+  filter: blur(10px);
+  background-size: 100% 30px;
+  border-radius: 100px;
+}
+.me .eye,
+.me .eye::before {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 175px;
+  left: 120px;
+  z-index: -1;
+
+  background: url(http://www.supah.it/dribbble/006/eye.png) no-repeat center;
+}
+.me .eye::before {
+  content: "";
+  top: -2px;
+  left: 95px;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 390px;
+  height: 595px;
+  transform: translateZ(150px) translateX(-11px) translateY(-26px) scale(0.55);
+
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1200px;
+  color: white;
+  opacity: 0.6;
+  border-radius: 8px;
+}
+.text::after {
+  content: "WebDeveloper";
+  width: 100%;
+  position: absolute;
+  bottom: -72px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 1;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-indent: 20px;
+}

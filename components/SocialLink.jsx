@@ -74,8 +74,8 @@ export default function SocialLink() {
       </div>
       <div className="">
         <div className=" relative  overflow-hidden">
-          <div className=" top-1/3 left-2  absolute bg-gray-600 blur-sm h-7 w-7 rounded-full "></div>
-          <div className=" top-2 right-2  absolute bg-gray-50 h-6 w-6 rounded-full blur-sm"></div>
+          <div className=" top-1/3 left-2  absolute bg-slate-600 blur-sm h-7 w-7 rounded-full "></div>
+          <div className=" top-2 right-2  absolute bg-slate-50 h-6 w-6 rounded-full blur-sm"></div>
           <a
             target="_blank"
             href="https://github.com/RaselKazi"
@@ -116,7 +116,7 @@ export default function SocialLink() {
       </div>
 
       {/* <a
-        className=" relative text-2xl p-3 rounded-md bg-gray-500/10 backdrop-blur transition duration-300 hover:translate-y-1 text-green-600"
+        className=" relative text-2xl p-3 rounded-md bg-slate-500/10 backdrop-blur transition duration-300 hover:translate-y-1 text-green-600"
         target="_blank"
         href="https://api.whatsapp.com/send?phone=8801830225388&text=hi"
         rel="noreferrer"
