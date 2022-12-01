@@ -12,7 +12,7 @@ export default function CircularImageTransition() {
   const [rotateDeg, setRotateDeg] = useState(false);
   const [photoCount, setPhotoCount] = useState(0);
   const [imgUrl, setImgUrl] = useState(
-    "https://res.cloudinary.com/dfwtzokma/image/upload/v1667542563/20210921_234100_ynxyup.jpg"
+    "https://res.cloudinary.com/dfwtzokma/image/upload/v1667542563/kazi_qmgy3h.jpg"
   );
   let pieceCount = 6;
 
@@ -20,9 +20,7 @@ export default function CircularImageTransition() {
     const interval = setInterval(() => {
       setTimeout(() => setRotateDeg((p) => false), 2000);
       setRotateDeg((p) => true);
-      setImgUrl((p) => bgImg[photoCount]);
-      setPhotoCount((p) => (p == 3 ? 0 : p + 1));
-    }, 5000);
+    }, 4000);
 
     return () => {
       clearInterval(interval);
@@ -55,7 +53,8 @@ export default function CircularImageTransition() {
                   transitionTimingFunction:
                     " cubic-bezier(0.68, -0.55, 0.265, 1.55)",
                   backgroundImage: `url(${imgUrl})`,
-                }}></div>
+                }}
+              ></div>
             );
           })}
         </div>

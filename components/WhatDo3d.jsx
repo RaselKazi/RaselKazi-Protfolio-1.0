@@ -15,7 +15,7 @@ export default function WhatDo3d() {
                 <div className=" -top-7 left-10 absolute  text-6xl animate-bounce text-white">
                   <GoCreditCard />
                 </div>
-                <div className=" top-3 left-3 absolute  text-lg text-white">
+                <div className=" top-3 left-3 absolute text-base  md:text-lg text-white">
                   Web Developer
                 </div>
               </div>

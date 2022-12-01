@@ -25,15 +25,6 @@ export default function Portfolio() {
     setProtfolio(filterItem);
   };
 
-  // useEffect(() => {
-  //   // Button is displayed after scrolling for 500 pixels
-  //     if (window.outerWidth < 650) {
-  //       setActive("nextjs");
-  //       const filterItem = items.filter((item) => item.category === "nextjs");
-  //     setProtfolio(filterItem);
-  //     }
-  // }, []);
-
   return (
     <div id="Portfolio" className=" relative overflow-hidden bg-slate-600">
       <div className=" absolute top-0 left-0">
@@ -49,11 +40,12 @@ export default function Portfolio() {
               <ProjectButton
                 active={active}
                 filter={filterData}
-                title={menuItem}></ProjectButton>
+                title={menuItem}
+              ></ProjectButton>
             </div>
           </div>
 
-          <div className="grid gap-1 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 transition-all  duration-500 text-gray-700 dark:text-gray-700">
+          <div className="grid gap-1 grid-cols-2 customGrid1 customText sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 transition-all  duration-500 text-gray-700 dark:text-gray-700">
             <ProjectList portfolio={portfolio}></ProjectList>
           </div>
         </div>

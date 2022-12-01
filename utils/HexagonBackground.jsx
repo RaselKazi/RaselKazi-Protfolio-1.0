@@ -14,7 +14,7 @@ export default function HexagonBackground() {
   return (
     <>
       <div className={style.container}>
-        {[...Array(25)].map((y, l) => {
+        {[...Array(65)].map((y, l) => {
           return (
             <div key={l} className={style.row}>
               {[...Array(21)].map((y, i) => {

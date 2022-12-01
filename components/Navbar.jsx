@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from "react";
-import { BsFillBrightnessHighFill } from "react-icons/bs";
-import { MdOutlineDarkMode } from "react-icons/md";
+
 import WaveTextAnimation from "../utils/Text/WaveTextAnimation";
-import LiquidButtonv2 from "../utils/Button/LiquidButtonv2";
+import CvButton from "../utils/Button/CvButton";
 
 export default function navbar() {
   const [top, setTop] = useState(false);
@@ -26,7 +25,8 @@ export default function navbar() {
       className={` fixed w-full z-40  transition duration-300 ease-in-out ${
         top &&
         "backdrop-blur-lg bg-slate-800/60 dark:bg-slate-800/60 border-b border-sky-500/30 shadow-lg"
-      }`}>
+      }`}
+    >
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <div className="flex items-center">
@@ -46,37 +46,42 @@ export default function navbar() {
               <li>
                 <a
                   href="#Home"
-                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400">
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
+                >
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="#About"
-                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400">
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
+                >
                   About
                 </a>
               </li>
               <li>
                 <a
                   href="#Portfolio"
-                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400">
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
+                >
                   Portfolio
                 </a>
               </li>
-              {/* <li>
+
+              <li>
                 <a
-                  href="#Blog"
-                  className="font-medium tracking-wide dark:text-white text-gray-700 transition-colors duration-200 hover:text-gray-400"
+                  href="#Skill"
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
                 >
-                  Blog
+                  Skill
                 </a>
-              </li> */}
+              </li>
 
               <li>
                 <a
                   href="#Contact"
-                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400">
+                  className="font-medium tracking-wide  dark:text-gray-50 text-gray-50 transition-colors duration-200 hover:text-gray-400"
+                >
                   Contact
                 </a>
               </li>
@@ -84,24 +89,13 @@ export default function navbar() {
           </div>
           <ul className=" items-center hidden space-x-8 lg:flex">
             <li>
-              {/* <div
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className=" cursor-pointer rounded-full border-2 p-2 border-blue-400 text-2xl dark:text-gray-50 text-gray-600 transition duration-200 hover:bg-blue-400 hover:text-white dark:hover:text-gray-700"
-              >
-                {theme === "light" ? (
-                  <BsFillBrightnessHighFill />
-                ) : (
-                  <MdOutlineDarkMode />
-                )}
-              </div> */}
-            </li>
-            <li>
               <a
                 target="_blank"
                 href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
                 className=" flex"
-                rel="noreferrer">
-                <LiquidButtonv2 mode="cv" text="Download CV"></LiquidButtonv2>
+                rel="noreferrer"
+              >
+                <CvButton text="Download CV"></CvButton>
               </a>
             </li>
           </ul>
@@ -110,10 +104,12 @@ export default function navbar() {
               aria-label="Open Menu"
               title="Open Menu"
               className="p-2 -mr-1 transition duration-200 rounded focus:shadow-outline"
-              onClick={() => setIsMenuOpen(true)}>
+              onClick={() => setIsMenuOpen(true)}
+            >
               <svg
                 className="w-5 text-sky-500 dark:text-sky-500"
-                viewBox="0 0 24 24">
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -137,10 +133,12 @@ export default function navbar() {
                         aria-label="Close Menu"
                         title="Close Menu"
                         className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-slate-500/50 dark:hover:bg-slate-500/50 focus:bg-slate-200 focus:outline-none focus:shadow-outline"
-                        onClick={() => setIsMenuOpen(false)}>
+                        onClick={() => setIsMenuOpen(false)}
+                      >
                         <svg
                           className="w-5  dark:text-sky-500 text-sky-500 "
-                          viewBox="0 0 24 24">
+                          viewBox="0 0 24 24"
+                        >
                           <path
                             fill="currentColor"
                             d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
@@ -156,7 +154,8 @@ export default function navbar() {
                           href="#Home"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                          onClick={() => setIsMenuOpen(false)}>
+                          onClick={() => setIsMenuOpen(false)}
+                        >
                           Home
                         </a>
                       </li>
@@ -165,7 +164,8 @@ export default function navbar() {
                           href="#About"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                          onClick={() => setIsMenuOpen(false)}>
+                          onClick={() => setIsMenuOpen(false)}
+                        >
                           About
                         </a>
                       </li>
@@ -174,26 +174,29 @@ export default function navbar() {
                           href="#Portfolio"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                          onClick={() => setIsMenuOpen(false)}>
+                          onClick={() => setIsMenuOpen(false)}
+                        >
                           Portfolio
                         </a>
                       </li>
-                      {/* <li>
+                      <li>
                         <a
-                          href="#Blog"
+                          href="#Skill"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
-                  to-blue-600 dark:text-white text-gray-700"
+                  to-blue-600 dark:text-gray-50 text-gray-50"
+                          onClick={() => setIsMenuOpen(false)}
                         >
-                          Blog
+                          Skill
                         </a>
-                      </li> */}
+                      </li>
 
                       <li>
                         <a
                           href="#Contact"
                           className="font-medium py-2 px-3 rounded-md transition duration-200  hover:bg-gradient-to-t from-cyan-500
                   to-blue-600 dark:text-gray-50 text-gray-50"
-                          onClick={() => setIsMenuOpen(false)}>
+                          onClick={() => setIsMenuOpen(false)}
+                        >
                           Contact
                         </a>
                       </li>
@@ -203,7 +206,8 @@ export default function navbar() {
                           href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
                           className="inline-flex items-center w-full justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200    hover:from-blue-400 focus:shadow-outline rounded-full  bg-gradient-to-t from-cyan-500
                   to-blue-600  hover:scale-105 focus:shadow-outline focus:outline-none mr-4"
-                          rel="noreferrer">
+                          rel="noreferrer"
+                        >
                           Download CV
                         </a>
                       </li>

@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .svg {
-width: 100%;
+  width: 100%;
   font: 10rem "Arial";
 }
 
@@ -42,5 +42,15 @@ width: 100%;
 @keyframes stroke-offset {
   100% {
     stroke-dashoffset: -35%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .svg {
+    width: 90%;
+    font: 8rem "Arial";
+  }
+  .container {
+    transform: translateX(-8%);
   }
 }

@@ -8,19 +8,19 @@ export default function About() {
   return (
     <div
       id="About"
-      className=" relative pb-20  mx-auto bg-slate-900 dark:bg-slate-900 overflow-hidden">
+      className=" w-screen relative pb-20  mx-auto bg-slate-900 dark:bg-slate-900 overflow-hidden"
+    >
       <div className="animate-pulse absolute top-24  -left-20 h-1/3 w-1/5 bg-sky-500/50  rounded-full blur-3xl"></div>
 
-      {/* <div className="animate-bounce absolute top-1/3 left-1/2 rounded-full h-20 w-20 bg-gradient-to-r from-gray-900/40  to-gray-700 "></div> */}
       <div className=" absolute bottom-10 right-0 rounded-full h h-60 w-80 rotate-45 blur-2xl bg-gradient-to-r from-purple-500/30  to-sky-500/30 "></div>
 
       <TagTitle title="About Section"></TagTitle>
-      <div className=" w-11/12 lg:w-5/6 mx-auto grid grid-cols-1 gap-2 lg:grid-cols-2  ">
+      <div className=" w-full  max-w-7xl  mx-auto grid grid-cols-1 lg:grid-cols-2  ">
         <div className=" relative  h-[34rem] lg:h-full">
           <UserProfile />
         </div>
 
-        <div className=" w-5/6  mx-auto  relative  p-6 lg:p-12  rounded-lg bg-slate-500/10 text-sky-500/80 z-10 backdrop-blur">
+        <div className=" w-full mx-4  lg:mr-4  relative  p-3 md:p-6 lg:p-12  rounded-lg bg-slate-500/10 text-sky-500/80 z-10 backdrop-blur">
           <h5 className="mb-3 text-2xl font-extrabold leading-none  text-red-400 dark:text-red-400 ">
             <GlowingTextAnimation text="Hi, I'm Here To Help Your Next Project"></GlowingTextAnimation>
           </h5>
@@ -40,7 +40,7 @@ export default function About() {
                 <GlowingTextAnimation text="3.High Quality"></GlowingTextAnimation>
               </li>
             </ul>
-            <div className=" mt-24 col-span-2 flex justify-center items-center">
+            <div className=" mt-24 col-span-2 sm:flex justify-center items-center hidden ">
               <MacbookAir />
             </div>
           </div>
@@ -50,7 +50,8 @@ export default function About() {
               href="https://drive.google.com/file/d/1G38jivxdOViZzlK6MckMJwmVu-d_cLjb/view?usp=sharing"
               className="inline-flex items-center justify-center h-12 px-6 font-medium text-white transition duration-200 rounded-lg  bg-gradient-to-t from-pink-500
                   to-pink-900 hover:scale-110 focus:shadow-outline focus:outline-none mr-4 shadow-xl shadow-pink-500/30"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               Download CV
             </a>
           </div>

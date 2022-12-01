@@ -1,9 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import GlassButton from "../utils/Button/GlassButton";
-import { motion } from "framer-motion";
-import { reveal, veal, cardAnimation, easing } from "../utils/Animations";
-import { useScroll } from "../hook/useScroll";
+
 import Module from "./Module";
 export default function ProjectList({ portfolio: portfolio }) {
   const colo = [
@@ -20,7 +18,7 @@ export default function ProjectList({ portfolio: portfolio }) {
     "pink",
     "purple",
   ];
-  const [element, controls] = useScroll();
+
   const [openModule, setOpenModule] = useState(false);
   const [ModuleData, setModuleData] = useState({});
 
@@ -35,12 +33,14 @@ export default function ProjectList({ portfolio: portfolio }) {
         <Module
           ModuleData={ModuleData}
           openModule={openModule}
-          setOpenModule={setOpenModule}></Module>
+          setOpenModule={setOpenModule}
+        ></Module>
       )}
       {portfolio.map((item) => (
         <div
           key={item.url}
-          className="relative p-4 rounded-lg transition-all duration-300   shadow-lg bg-slate-700/10 backdrop-blur group ">
+          className="relative p-4 rounded-lg transition-all duration-300   shadow-lg bg-slate-700/10 backdrop-blur group "
+        >
           <Image
             className="object-cover object-top w-full h-1/2  rounded-xl group-hover:object-bottom transition-all duration-1000 "
             src={`/image/projects/${item.url}.png`}
@@ -55,11 +55,14 @@ export default function ProjectList({ portfolio: portfolio }) {
           </h2>
           <div className=" flex justify-between my-1">
             <div className="">
-              <h2 className=" text-slate-500 capitalize">{item.discretion}</h2>
+              <h2 className=" text-sm sm:text-base text-slate-500 capitalize">
+                {item.discretion}
+              </h2>
             </div>
             <div
               onClick={() => HandleDetails(item)}
-              className=" cursor-pointer">
+              className=" cursor-pointer"
+            >
               <GlassButton />
             </div>
           </div>

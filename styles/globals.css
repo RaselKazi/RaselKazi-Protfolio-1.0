@@ -120,3 +120,14 @@ html {
     opacity: 1;
   }
 }
+@media screen and (max-width: 470px) {
+  .customGrid1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 470px) {
+  .customText {
+    font-size: 1.2rem /* 16px */;
+    line-height: 1.5rem;
+  }
+}
