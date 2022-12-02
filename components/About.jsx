@@ -20,7 +20,7 @@ export default function About() {
           <UserProfile />
         </div>
 
-        <div className=" w-full mx-4  lg:mr-4  relative  p-3 md:p-6 lg:p-12  rounded-lg bg-slate-500/10 text-sky-500/80 z-10 backdrop-blur">
+        <div className=" mx-4  md:mr-4  relative  p-3 md:p-5 lg:p-8  rounded-lg bg-slate-500/10 text-sky-500/80 z-10 backdrop-blur">
           <h5 className="mb-3 text-2xl font-extrabold leading-none  text-red-400 dark:text-red-400 ">
             <GlowingTextAnimation text="Hi, I'm Here To Help Your Next Project"></GlowingTextAnimation>
           </h5>

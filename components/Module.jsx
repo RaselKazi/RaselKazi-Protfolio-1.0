@@ -9,13 +9,13 @@ export default function Module({ ModuleData, openModule, setOpenModule }) {
   return (
     <>
       <div
-        className={` fixed  top-0 left-0 h-screen w-screen bg-slate-900/10 backdrop-blur  flex justify-center items-center z-50 transition-all duration-500 overflow-hidden ${
+        className={` fixed  top-0 left-0 h-screen w-screen bg-slate-900/10 backdrop-blur  flex justify-center items-center z-[50000] transition-all duration-500 overflow-hidden ${
           openModule
             ? " block opacity-100 scale-100 transition-all duration-500 "
             : " hidden opacity-0 scale-0"
         }`}
       >
-        <div className=" w-11/12 lg:w-4/6 h-full lg:h-5/6 pb-20 overflow-hidden bg-slate-800 dark:bg-slate-800 relative rounded-2xl ">
+        <div className=" w-11/12 lg:w-4/6 h-[90%] lg:h-5/6 pb-20 overflow-hidden bg-slate-800 dark:bg-slate-800 relative rounded-2xl ">
           <div className=" h-12 w-full bg-gradient-to-b from-gray-100 to-gray-300  dark:from-gray-800 dark:to-gray-600 "></div>
           <CloseButton setOpenBtn={setOpenModule}></CloseButton>
           <WaterText text={ModuleData.title}></WaterText>
