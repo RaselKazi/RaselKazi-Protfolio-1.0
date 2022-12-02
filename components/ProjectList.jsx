@@ -39,7 +39,7 @@ export default function ProjectList({ portfolio: portfolio }) {
       {portfolio.map((item) => (
         <div
           key={item.url}
-          className="relative p-4 rounded-lg transition-all duration-300   shadow-lg bg-slate-700/10 backdrop-blur group "
+          className="relative p-2 sm:p-4 rounded-lg transition-all duration-300   shadow-lg bg-slate-700/10 backdrop-blur group "
         >
           <Image
             className="object-cover object-top w-full h-1/2  rounded-xl group-hover:object-bottom transition-all duration-1000 "
@@ -50,12 +50,12 @@ export default function ProjectList({ portfolio: portfolio }) {
             width={300}
             height={200}
           />
-          <h2 className=" text-xl text-slate-50 capitalize my-2">
+          <h2 className=" text-lg sm:text-xl text-slate-50 capitalize my-2 customText">
             {item.title}
           </h2>
           <div className=" flex justify-between my-1">
             <div className="">
-              <h2 className=" text-sm sm:text-base text-slate-500 capitalize">
+              <h2 className=" text-sm hidden sm:block sm:text-base text-slate-500 capitalize">
                 {item.discretion}
               </h2>
             </div>

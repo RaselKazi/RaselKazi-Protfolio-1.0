@@ -74,3 +74,16 @@
   bottom: -35px;
   opacity: 1;
 }
+
+@media screen and (max-width: 640px) {
+  .icons {
+    margin: 8px 0px;
+  }
+  .icons a {
+    margin: 0 10px;
+  }
+  .icons a .layer {
+    width: 32px;
+    height: 32px;
+  }
+}

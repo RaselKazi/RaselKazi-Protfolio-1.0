@@ -10,17 +10,20 @@ export default function SkillItem({ link }) {
             <span
               style={{
                 borderColor: "#4267b2",
-              }}></span>
+              }}
+            ></span>
             <span></span>
             <span></span>
             <span></span>
             <span
               style={{
                 backgroundColor: "rgba(255,255,255,00)",
-              }}>
+              }}
+            >
               <img
-                className="transition duration-200  
-                w-20 h-10  cursor-pointer rounded-md bg-slate-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
+                className="transition duration-200 
+               w-14 h-8 
+                sm:w-20 sm:h-10  cursor-pointer rounded-md bg-slate-500/10 backdrop-blur transition duration-300 hover:translate-y-1"
                 src={`/icon/${link}.svg`}
                 alt=""
               />

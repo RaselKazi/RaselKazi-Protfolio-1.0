@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 import WaveTextAnimation from "../utils/Text/WaveTextAnimation";
-import CvButton from "../utils/Button/CvButton";
+import CvButton12 from "../utils/Button/CvButton12";
 
 export default function navbar() {
   const [top, setTop] = useState(false);
@@ -95,7 +95,7 @@ export default function navbar() {
                 className=" flex"
                 rel="noreferrer"
               >
-                <CvButton text="Download CV"></CvButton>
+                <CvButton12 text="Download CV"></CvButton12>
               </a>
             </li>
           </ul>
